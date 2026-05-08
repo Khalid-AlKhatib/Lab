@@ -1,0 +1,1292 @@
+[
+  {
+    "year": 2026,
+    "type": "Demo paper",
+    "title": "ARGSBASE: A Multi-Agent Interface for Structured Human–AI Deliberation",
+    "authors": "Frieso Turkstra, Sara Nabhani, and Khalid Al-Khatib",
+    "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "month": "March 2026",
+    "pages": "563–574",
+    "location": "Rabat, Morocco",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2026.eacl-demo.39/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2026.eacl-demo.39"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Hybrid Intelligence for Logical Fallacy Detection",
+    "authors": "Mariia Kutepova and Khalid Al-Khatib",
+    "venue": "Proceedings of the Fourth Workshop on Bridging Human-Computer Interaction and Natural Language Processing (HCI+NLP)",
+    "month": "November 2025",
+    "pages": "197–208",
+    "location": "Suzhou, China",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.hcinlp-1.16/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.hcinlp-1.16"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/9e32e62e-6441-4376-8711-e9c9577f2c56/"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Toward Culturally-Aware Arabic Debate Platforms with NLP Support",
+    "authors": "Khalid Al-Khatib and Mohammad Khader",
+    "venue": "Proceedings of The Third Arabic Natural Language Processing Conference",
+    "month": "November 2025",
+    "pages": "359–374",
+    "location": "Suzhou, China",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.arabicnlp-main.29/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.arabicnlp-main.29"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Multi-Class versus Means-End: Assessing Classification Approaches for Argument Patterns",
+    "authors": "Maximilian Heinrich, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Proceedings of the 12th Argument Mining Workshop",
+    "month": "July 2025",
+    "pages": "195–204",
+    "location": "Vienna, Austria",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.argmining-1.19/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/heinrich_2025b.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.argmining-1.19"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/a3291e99-e3e5-4540-9dd7-05396c43a4dc/"
+      },
+      {
+        "label": "Slides",
+        "url": "https://downloads-cf.webis.de/publications/slides/heinrich_2025b.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Storytelling in Argumentative Discussions: Exploring the Use of Narratives in ChangeMyView",
+    "authors": "Sara Nabhani, Khalid Al-Khatib, Federico Pianzola, and Malvina Nissim",
+    "venue": "Proceedings of the 12th Argument Mining Workshop",
+    "month": "July 2025",
+    "pages": "217–227",
+    "location": "Vienna, Austria",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.argmining-1.21/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.argmining-1.21"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/e2502ac3-91fe-419e-9a21-9adb1889bd33/"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Integrating Argumentation Features for Enhanced Propaganda Detection in Arabic Narratives on the Israeli War on Gaza",
+    "authors": "Sara Nabhani, Claudia Borg, Kurt Micallef, and Khalid Al-Khatib",
+    "venue": "Proceedings of the First International Workshop on Nakba Narratives as Language Resources",
+    "month": "January 2025",
+    "pages": "127–149",
+    "location": "Abu Dhabi",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.nakbanlp-1.14/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2025.nakbanlp-1.14.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/integrating-argumentation-features-for-enhanced-propaganda-detect/"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Shared-task paper",
+    "title": "TriLLaMa at CQs-Gen 2025: A Two-Stage LLM-Based System for Critical Question Generation",
+    "authors": "Frieso Turkstra, Sara Nabhani, and Khalid Al-Khatib",
+    "venue": "Proceedings of the 12th Argument Mining Workshop",
+    "month": "July 2025",
+    "pages": "349–357",
+    "location": "Vienna, Austria",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.argmining-1.34/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.argmining-1.34"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/trillama-at-cqs-gen-2025-a-two-stage-llm-based-system-for-critica/"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "type": "Conference paper",
+    "title": "Improving Argument Effectiveness Across Ideologies using Instruction-tuned Large Language Models",
+    "authors": "Roxanne El Baff, Khalid Al-Khatib, Milad Alshomary, Kai Konen, Benno Stein, and Henning Wachsmuth",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "month": "December 2024",
+    "pages": "4604–4622",
+    "location": "Miami, Florida, USA",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2024.findings-emnlp.265/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/elbaff_2024.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.265"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "type": "Conference paper",
+    "title": "Reference-guided Style-Consistent Content Transfer",
+    "authors": "Wei-Fan Chen, Milad Alshomary, Maja Stahl, Khalid Al-Khatib, Benno Stein, and Henning Wachsmuth",
+    "venue": "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    "month": "May 2024",
+    "pages": "13754–13768",
+    "location": "Torino, Italia",
+    "publisher": "ELRA and ICCL",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2024.lrec-main.1201/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/chen_2024a.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/reference-guided-style-consistent-content-transfer/"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "type": "Demo paper",
+    "title": "TL;DR Progress: Multi-faceted Literature Exploration in Text Summarization",
+    "authors": "Shahbaz Syed, Khalid Al-Khatib, and Martin Potthast",
+    "venue": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations",
+    "month": "March 2024",
+    "pages": "195–206",
+    "location": "St. Julians, Malta",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2024.eacl-demo.21/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2024a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2024.eacl-demo.21"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/tldr-progress-multi-faceted-literature-exploration-in-text-summar/"
+      },
+      {
+        "label": "arXiv",
+        "url": "http://arxiv.org/abs/2402.06913"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/eacl24-tldr-progress"
+      },
+      {
+        "label": "Demo",
+        "url": "https://tldr-progress.demo.webis.de/"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "type": "Conference paper",
+    "title": "Language is Scary when Over-Analyzed: Unpacking Implied Misogynistic Reasoning with Argumentation Theory-Driven Prompts",
+    "authors": "Arianna Muti, Federico Ruggeri, Khalid Al-Khatib, Alberto Barrón-Cedeño, and Tommaso Caselli",
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "month": "November 2024",
+    "pages": "21091–21107",
+    "location": "Miami, Florida, USA",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2024.emnlp-main.1174/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2024.emnlp-main.1174.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/language-is-scary-when-over-analyzed-unpacking-implied-misogynist/"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "type": "Conference paper",
+    "title": "A New Dataset for Causality Identification in Argumentative Texts",
+    "authors": "Khalid Al-Khatib, Michael Völske, Anh Le, Shahbaz Syed, Martin Potthast, and Benno Stein",
+    "venue": "Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    "month": "September 2023",
+    "pages": "349–354",
+    "location": "Prague, Czechia",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2023.sigdial-1.31/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2023a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2023.sigdial-1.31"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/SIGDIAL-23"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "type": "Conference paper",
+    "title": "Citance-Contextualized Summarization of Scientific Papers",
+    "authors": "Shahbaz Syed, Ahmad Dawar Hakimi, Khalid Al-Khatib, and Martin Potthast",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "month": "December 2023",
+    "pages": "8551–8568",
+    "location": "Singapore",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2023.findings-emnlp.573/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2023c.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.573"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/citance-contextualized-summarization-of-scientific-papers/"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2311.02408"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/emnlp23-contextualized-summarization-of-scientific-papers"
+      },
+      {
+        "label": "Data",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.10031025"
+      },
+      {
+        "label": "Slides",
+        "url": "https://downloads-cf.webis.de/publications/slides/syed_2023c.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "type": "Conference paper",
+    "title": "Indicative Summarization of Long Discussions",
+    "authors": "Shahbaz Syed, Dominik Schwabe, Khalid Al-Khatib, and Martin Potthast",
+    "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "month": "December 2023",
+    "pages": "2752–2788",
+    "location": "Singapore",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2023.emnlp-main.166/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2023b.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2023.emnlp-main.166"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2311.01882"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/emnlp23-indicative-summarization-of-long-discussions"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "type": "Conference paper",
+    "title": "Unveiling the Power of Argument Arrangement in Online Persuasive Discussions",
+    "authors": "Nailia Mirzakhmedova, Johannes Kiesel, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "month": "December 2023",
+    "pages": "15659–15671",
+    "location": "Singapore",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2023.findings-emnlp.1048/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/mirzakhmedova_2023b.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/unveiling-the-power-of-argument-arrangement-in-online-persuasive-/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/EMNLP-23"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "type": "Report article",
+    "title": "Towards a Unified Model of Scholarly Argumentation (Dagstuhl Seminar 22432)",
+    "authors": "Khalid Al-Khatib, Anita de Waard, Dayne Freitag, Iryna Gurevych, Yufang Hou, and Harrisen Scells",
+    "venue": "Dagstuhl Reports",
+    "month": "2023",
+    "pages": "175–206",
+    "location": "Dagstuhl, Germany",
+    "publisher": "Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.4230/DagRep.12.10.175"
+      },
+      {
+        "label": "Report",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/DagRep.12.10.175"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "type": "Conference paper",
+    "title": "Differential Bias: On the Perceptibility of Stance Imbalance in Argumentation",
+    "authors": "Alonso Palomino, Martin Potthast, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Findings of the Association for Computational Linguistics: AACL-IJCNLP 2022",
+    "month": "November 2022",
+    "pages": "411–421",
+    "location": "",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2022.findings-aacl.39/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/palomino_2022.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/differential-bias-on-the-perceptibility-of-stance-imbalance-in-ar"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2210.06970"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/AACL-22"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "type": "Conference paper",
+    "title": "Analyzing Persuasion Strategies of Debaters on Social Media",
+    "authors": "Matti Wiegmann, Khalid Al-Khatib, Vishal Khanna, and Benno Stein",
+    "venue": "Proceedings of COLING 2022",
+    "month": "October 2022",
+    "pages": "6897–6905",
+    "location": "Gyeongju, Republic of Korea",
+    "publisher": "International Committee on Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2022.coling-1.600/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/wiegmann_2022b.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2022.coling-1.600"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-persuasive-debaters-22"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "type": "Book chapter",
+    "title": "5.3 Developing Benchmark Datasets for Frame Identification",
+    "authors": "Khalid Al-Khatib, Katarzyna Budzynska, Alexander Bondarenko, Lucie Flek, Anette Frank, Iryna Gurevych, and Noam Slonim",
+    "venue": "Report from Dagstuhl Seminar 22131: Framing in Communication: From Theories to Computation",
+    "month": "2022",
+    "pages": "133–135",
+    "location": "Dagstuhl, Germany",
+    "publisher": "Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+    "links": [
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/budzynska_2022.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/53-developing-benchmark-datasets-for-frame-identification/"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "PhD thesis",
+    "title": "Computational Analysis of Argumentation Strategies",
+    "authors": "Khalid Al-Khatib",
+    "venue": "Bauhaus-Universität Weimar",
+    "month": "2021",
+    "pages": "",
+    "location": "Weimar, Germany",
+    "publisher": "Bauhaus-Universität Weimar",
+    "links": [
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2019.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.25643/bauhaus-universitaet.4461"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/phd/basesearch/Khatib21"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-argument-attributes"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "Conference paper",
+    "title": "Employing Argumentation Knowledge Graphs for Neural Argument Generation",
+    "authors": "Khalid Al-Khatib, Lukas Trautner, Henning Wachsmuth, Yufang Hou, and Benno Stein",
+    "venue": "Proceedings of ACL-IJCNLP 2021 (Volume 1: Long Papers)",
+    "month": "August 2021",
+    "pages": "4744–4754",
+    "location": "Online",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2021.acl-long.366/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2021.acl-long.366.pdf"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2021a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2021.acl-long.366"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/ACL-21"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "Conference paper",
+    "title": "Generating Informative Conclusions for Argumentative Texts",
+    "authors": "Shahbaz Syed, Khalid Al-Khatib, Milad Alshomary, Henning Wachsmuth, and Martin Potthast",
+    "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    "month": "August 2021",
+    "pages": "3482–3493",
+    "location": "Online",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2021.findings-acl.306/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2021a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2021.findings-acl.306"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2106.01064"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/ACL-21"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-conclugen-21"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "Demo paper",
+    "title": "Summary Explorer: Visualizing the State of the Art in Text Summarization",
+    "authors": "Shahbaz Syed, Tariq Yousef, Khalid Al-Khatib, Stefan Jänicke, and Martin Potthast",
+    "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    "month": "November 2021",
+    "pages": "185–194",
+    "location": "Online and Punta Cana, Dominican Republic",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2021.emnlp-demo.22/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2021b.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2021.emnlp-demo.22"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2108.01879"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/summary-explorer"
+      },
+      {
+        "label": "Tool",
+        "url": "https://tldr.webis.de/"
+      },
+      {
+        "label": "Poster",
+        "url": "https://downloads-cf.webis.de/publications/posters/syed_2021b.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "Conference paper",
+    "title": "Controlled Neural Sentence-Level Reframing of News Articles",
+    "authors": "Wei-Fan Chen, Khalid Al-Khatib, Benno Stein, and Henning Wachsmuth",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    "month": "November 2021",
+    "pages": "2683–2693",
+    "location": "Punta Cana, Dominican Republic",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2021.findings-emnlp.228/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/chen_2021.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.228"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "type": "Journal report",
+    "title": "Report on the 1st Workshop on Argumentation Knowledge Graphs (ArgKG 2021) at AKBC 2021",
+    "authors": "Tirthankar Ghosal, Khalid Al-Khatib, Yufang Hou, Anita de Waard, and Dayne Freitag",
+    "venue": "SIGIR Forum",
+    "month": "2021",
+    "pages": "19:1–19:12",
+    "location": "",
+    "publisher": "Association for Computing Machinery",
+    "links": [
+      {
+        "label": "Webis PDF",
+        "url": "https://webis.de/downloads/publications/papers/alkhatib_2021b.pdf"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/journals/sigir/GhosalKHWF21"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "End-to-End Argumentation Knowledge Graph Construction",
+    "authors": "Khalid Al-Khatib, Yufang Hou, Henning Wachsmuth, Charles Jochim, Francesca Bonin, and Benno Stein",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2020)",
+    "month": "February 2020",
+    "pages": "7367–7374",
+    "location": "New York, USA",
+    "publisher": "AAAI Press",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6231"
+      },
+      {
+        "label": "PDF",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6231/6087"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2020a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1609/aaai.v34i05.6231"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-argkb-20"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "Crawling and Preprocessing Mailing Lists at Scale for Dialog Analysis",
+    "authors": "Janek Bevendorff, Khalid Al-Khatib, Martin Potthast, and Benno Stein",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "month": "July 2020",
+    "pages": "1151–1158",
+    "location": "Seattle, USA",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.acl-main.108/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/bevendorff_2020c.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2020.acl-main.108"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/acl20-crawling-mailing-lists"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-gmane-19"
+      },
+      {
+        "label": "Video",
+        "url": "https://virtual.acl2020.org/paper_main.108.html"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "Exploiting Personal Characteristics of Debaters for Predicting Persuasiveness",
+    "authors": "Khalid Al-Khatib, Michael Völske, Shahbaz Syed, Nikolay Kolyada, and Benno Stein",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "month": "July 2020",
+    "pages": "7067–7072",
+    "location": "Online",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.acl-main.632/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2020.acl-main.632.pdf"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2020b.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/acl20-personal-characteristics-predicting-persuasiveness"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-cmv-20"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "Style Analysis of Argumentative Texts by Mining Rhetorical Devices",
+    "authors": "Khalid Al-Khatib, Viorel Morari, and Benno Stein",
+    "venue": "Proceedings of the 7th Workshop on Argument Mining",
+    "month": "December 2020",
+    "pages": "106–116",
+    "location": "",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.argmining-1.12/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2020.argmining-1.12.pdf"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2020c.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "News Editorials: Towards Summarizing Long Argumentative Texts",
+    "authors": "Shahbaz Syed, Roxanne El Baff, Khalid Al-Khatib, Johannes Kiesel, Benno Stein, and Martin Potthast",
+    "venue": "Proceedings of COLING 2020",
+    "month": "December 2020",
+    "pages": "5384–5396",
+    "location": "Barcelona",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.coling-main.470/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/syed_2020a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/V1/2020.COLING-MAIN.470"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/COLING-20"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-editorialsum-20"
+      },
+      {
+        "label": "Slides",
+        "url": "https://downloads-cf.webis.de/publications/slides/syed_2020a.pdf"
+      },
+      {
+        "label": "Video",
+        "url": "https://youtube.com/watch?v=35Yh6MUz7sY"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Conference paper",
+    "title": "Analyzing the Persuasive Effect of Style in News Editorial Argumentation",
+    "authors": "Roxanne El Baff, Henning Wachsmuth, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "month": "July 2020",
+    "pages": "3154–3160",
+    "location": "Seattle, USA",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.acl-main.287/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/elbaff_2020a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2020.acl-main.287"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/acl20-editorials-style-persuasive-effect"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-editorial-quality-18"
+      },
+      {
+        "label": "Video",
+        "url": "https://slideslive.com/38929171/analyzing-the-persuasive-effect-of-style-in-news-editorial-argumentation"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "type": "Workshop paper",
+    "title": "Persuasiveness of News Editorials Depending on Ideology and Personality",
+    "authors": "Roxanne El Baff, Khalid Al-Khatib, Benno Stein, and Henning Wachsmuth",
+    "venue": "Proceedings of the Third Workshop on Computational Modeling of People's Opinions, Personality, and Emotion's in Social Media",
+    "month": "December 2020",
+    "pages": "29–40",
+    "location": "Barcelona, Spain (Online)",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2020.peoples-1.4/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/elbaff_2020b.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2020.peoples-1.4"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/peoples20-news-edtorials-analysis-depending-on-ideology-and-personality"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-editorial-quality-18"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "type": "Conference paper",
+    "title": "Computational Argumentation Synthesis as a Language Modeling Task",
+    "authors": "Roxanne El Baff, Henning Wachsmuth, Khalid Al-Khatib, Manfred Stede, and Benno Stein",
+    "venue": "Proceedings of the 12th International Natural Language Generation Conference (INLG 2019)",
+    "month": "2019",
+    "pages": "54–64",
+    "location": "Tokyo, Japan",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/W19-8607/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/elbaff_2019.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/W19-8607"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "type": "Shared-task overview",
+    "title": "Same Side Stance Classification",
+    "authors": "Benno Stein, Yamen Ajjour, Roxanne El Baff, Khalid Al-Khatib, Philipp Cimiano, and Henning Wachsmuth",
+    "venue": "Same Side Stance Classification Shared Task 2019",
+    "month": "2019",
+    "pages": "1–7",
+    "location": "Florence, Italy",
+    "publisher": "CEUR-WS.org",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ceur-ws.org/Vol-2921/overview.pdf"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/stein_2021.pdf"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/conf/argmining/0001ABKCW19"
+      },
+      {
+        "label": "Event",
+        "url": "https://webis.de/events.html#sameside-2019"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "type": "Workshop paper",
+    "title": "Analysing the Submissions to the Same Side Stance Classification Task",
+    "authors": "Yamen Ajjour and Khalid Al-Khatib",
+    "venue": "Same Side Stance Classification Shared Task 2019",
+    "month": "2019",
+    "pages": "8–11",
+    "location": "Florence, Italy",
+    "publisher": "CEUR-WS.org",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ceur-ws.org/Vol-2921/invited.pdf"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/ajjour_2021b.pdf"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/conf/argmining/AjjourK19"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "type": "Conference paper",
+    "title": "Data Acquisition for Argument Search: The args.me Corpus",
+    "authors": "Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein",
+    "venue": "KI 2019: Advances in Artificial Intelligence",
+    "month": "2019",
+    "pages": "48–59",
+    "location": "",
+    "publisher": "Springer",
+    "links": [
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/ajjour_2019a.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/978-3-030-30179-8_4"
+      },
+      {
+        "label": "Publisher",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-030-30179-8_4"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/conf/ki/AjjourWKPHS19"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#args-me-corpus"
+      },
+      {
+        "label": "Slides",
+        "url": "https://downloads-cf.webis.de/publications/slides/ajjour_2019a.pdf"
+      },
+      {
+        "label": "Award",
+        "url": "https://weimar.webis.de/research/awards/#best-paper-ki-2019"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#args"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "type": "Conference paper",
+    "title": "Modeling Deliberative Argumentation Strategies on Wikipedia",
+    "authors": "Khalid Al-Khatib, Henning Wachsmuth, Kevin Lang, Jakob Herpel, Matthias Hagen, and Benno Stein",
+    "venue": "Proceedings of ACL 2018 (Volume 1: Long Papers)",
+    "month": "2018",
+    "pages": "2545–2555",
+    "location": "Melbourne, Australia",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/P18-1237/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2018.pdf"
+      },
+      {
+        "label": "UG portal",
+        "url": "https://research.rug.nl/en/publications/modeling-deliberative-argumentation-strategies-on-wikipedia/"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html?q=keywords:alkhatib_2018"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#computational-argumentation"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "type": "Conference paper",
+    "title": "Argumentation Synthesis following Rhetorical Strategies",
+    "authors": "Henning Wachsmuth, Manfred Stede, Roxanne El Baff, Khalid Al-Khatib, Maria Skeppstedt, and Benno Stein",
+    "venue": "Proceedings of COLING 2018",
+    "month": "2018",
+    "pages": "3753–3765",
+    "location": "Santa Fe, New Mexico, USA",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/C18-1318/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/wachsmuth_2018b.pdf"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/conf/coling/WachsmuthSBKSS18"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#arg-microtexts-synthesis-benchmark"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#computational-argumentation"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "type": "Conference paper",
+    "title": "Challenge or Empower: Revisiting Argumentation Quality in a News Editorial Corpus",
+    "authors": "Roxanne El Baff, Henning Wachsmuth, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Proceedings of CoNLL 2018",
+    "month": "2018",
+    "pages": "454–464",
+    "location": "",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/K18-1042/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/elbaff_2018.pdf"
+      },
+      {
+        "label": "Publisher",
+        "url": "https://aclanthology.org/K18-1044/"
+      },
+      {
+        "label": "DBLP",
+        "url": "https://dblp.org/rec/conf/conll/BaffWKS18"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-editorial-quality-18"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "type": "Workshop paper",
+    "title": "Building an Argument Search Engine for the Web",
+    "authors": "Henning Wachsmuth, Martin Potthast, Khalid Al-Khatib, Yamen Ajjour, Jana Puschmann, Jiani Qu, Jonas Dorsch, Viorel Morari, Janek Bevendorff, and Benno Stein",
+    "venue": "Proceedings of the 4th Workshop on Argument Mining",
+    "month": "2017",
+    "pages": "49–59",
+    "location": "Copenhagen, Denmark",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/W17-5106/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/wachsmuth_2017f.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/W17-5106"
+      },
+      {
+        "label": "Demo",
+        "url": "https://args.me"
+      },
+      {
+        "label": "Slides",
+        "url": "https://downloads-cf.webis.de/publications/slides/wachsmuth_2017f.pdf"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#?q=bibkey:wachsmuth_2017f"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "type": "Conference paper",
+    "title": "Using Argument Mining to Assess the Argumentation Quality of Essays",
+    "authors": "Henning Wachsmuth, Khalid Al-Khatib, and Benno Stein",
+    "venue": "Proceedings of COLING 2016: Technical Papers",
+    "month": "December 2016",
+    "pages": "1680–1691",
+    "location": "Osaka, Japan",
+    "publisher": "The COLING 2016 Organizing Committee",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/C16-1158/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/wachsmuth_2016b.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "http://argumentation.bplaced.net/arguana/software"
+      },
+      {
+        "label": "Demo",
+        "url": "https://demo.webis.de/essay-scoring/"
+      },
+      {
+        "label": "Poster",
+        "url": "https://downloads-cf.webis.de/publications/posters/wachsmuth_2016b.pdf"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#computational-argumentation"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "type": "Conference paper",
+    "title": "A News Editorial Corpus for Mining Argumentation Strategies",
+    "authors": "Khalid Al-Khatib, Henning Wachsmuth, Johannes Kiesel, Matthias Hagen, and Benno Stein",
+    "venue": "Proceedings of COLING 2016: Technical Papers",
+    "month": "December 2016",
+    "pages": "3433–3443",
+    "location": "Osaka, Japan",
+    "publisher": "The COLING 2016 Organizing Committee",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/C16-1324/"
+      },
+      {
+        "label": "Webis PDF",
+        "url": "https://downloads-cf.webis.de/publications/papers/alkhatib_2016b.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/webis-de/COLING-16"
+      },
+      {
+        "label": "Data",
+        "url": "https://webis.de/data.html#webis-editorials-16"
+      },
+      {
+        "label": "Poster",
+        "url": "https://downloads-cf.webis.de/publications/posters/alkhatib_2016b.pdf"
+      },
+      {
+        "label": "Research",
+        "url": "https://webis.de/research.html#?q=bibkey:alkhatib_2016b"
+      }
+    ]
+  }
+]

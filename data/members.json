@@ -2,32 +2,30 @@
   "faculty": [
     {
       "name": "Khalid Al-Khatib",
-      "image": "../images/members/Alkhatib2.png",
-      "interests": ["Natural Language Processing", "Computational Argumentation", "Bias Analysis"],
+      "image": "../images/optimized/khalid-profile-thumb.jpg",
+      "interests": [
+        "Human–AI Reasoning",
+        "Computational Argumentation",
+        "Discourse Analysis",
+        "Natural Language Processing"
+      ],
       "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-      "building": "3408",
-      "room": "1316",
-      "phone": "+49 511 762 5301",
+      "building": "Harmony Building",
+      "room": "1311.0429",
       "email": "khalid.alkhatib@rug.nl",
       "profileUrl": "../members/member-1.html"
     }
   ],
   "phd": [
     {
-      "name": "Maximilian Heinrich",
-      "image": "../images/members/img2.png",
-      "interests": ["Topic 1"],
-      "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-      "building": "3408",
-      "room": "1316",
-      "phone": "+49 511 762 5301",
-      "email": "member1@example.com",
-      "profileUrl": "../members/member-2.html"
-    },
-    {
       "name": "Sara Nabhani",
-      "image": "../images/members/nabhani.jpeg",
-      "interests": ["Natural Language Processing", "Computational Argumentation", "Computational Narratives", "Propaganda and Persuasion Analysis"],
+      "image": "../images/optimized/nabhani-thumb.jpg",
+      "interests": [
+        "Computational Argumentation",
+        "Narrative Analysis",
+        "Arabic and Multilingual NLP",
+        "Propaganda and Persuasion"
+      ],
       "address": "Oude Kijk in 't Jatstraat 26, Groningen",
       "building": "1312",
       "room": "0208",
@@ -36,14 +34,23 @@
     },
     {
       "name": "Frieso Turkstra",
-      "image": "../images/members/anon-male.jpg",
-      "interests": ["Natural Language Processing", "Computational Argumentation"],
+      "image": "../images/optimized/anon-male-thumb.jpg",
+      "interests": [
+        "Natural Language Processing",
+        "Human–AI Deliberation",
+        "Critical Question Generation"
+      ],
       "address": "Oude Kijk in 't Jatstraat 26, Groningen",
       "building": "1313",
       "room": "0305",
       "email": "fturkstra@rug.nl",
+      "role": "Research Assistant",
+      "status": "Alumnus",
+      "cardLabel": "Research Assistant",
+      "badgeClass": "student",
       "profileUrl": "../members/fturkstra.html"
     }
-  ]
+  ],
+  "master": [],
+  "intern": []
 }
-
