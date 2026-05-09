@@ -2,7 +2,7 @@
   'use strict';
 
   var NAV_ITEMS = [
-    { key: 'home', label: 'Home', path: 'index.html#home' },
+    { key: 'home', label: 'Home', path: '/' },
     { key: 'research', label: 'Research', path: 'research/research.html' },
     { key: 'members', label: 'Members', path: 'members/members.html' },
     { key: 'publications', label: 'Publications', path: 'publications/publications.html' },
@@ -29,8 +29,7 @@
   }
 
   function resolvePath(item, prefix) {
-    if (item.key === 'home' && prefix) return prefix + 'index.html#home';
-    if (item.key === 'home') return '#home';
+    if (item.key === 'home') return '/';
     return prefix + item.path;
   }
 
@@ -43,7 +42,7 @@
 
   function navMarkup(prefix, active) {
     var logo = prefix + 'images/optimized/logo-nav.png';
-    var home = prefix ? prefix + 'index.html' : 'index.html';
+    var home = '/';
     var links = NAV_ITEMS.map(function (item) {
       var isActive = item.key === active;
       return '<li class="nav-item"><a class="nav-link' + (isActive ? ' active' : '') + '" href="' + resolvePath(item, prefix) + '">' + item.label + '</a></li>';
@@ -67,7 +66,7 @@
     return '<footer class="site-footer"><div class="container">'
       + '<div class="site-footer-grid">'
       + '<div class="site-footer-brand">'
-      + '<a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="' + prefix + 'index.html">'
+      + '<a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="/">'
       + '<img alt="" aria-hidden="true" class="brand-logo-mark" width="40" height="40" src="' + logo + '"/>'
       + brandTextMarkup()
       + '</a>'
