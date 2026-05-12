@@ -4,8 +4,8 @@ body.site-home .home {
   position: relative;
   padding-bottom: clamp(8px, 1vw, 14px);
   background:
-    radial-gradient(circle at 78% 14%, rgba(var(--lts-aqua-rgb), 0.095), transparent 23rem),
-    radial-gradient(circle at 12% 18%, rgba(var(--lts-accent-rgb), 0.052), transparent 21rem);
+    radial-gradient(circle at 78% 14%, rgba(var(--lts-aqua-rgb), 0.04), transparent 23rem),
+    radial-gradient(circle at 12% 18%, rgba(16, 19, 24, 0.035), transparent 21rem);
 }
 
 body.site-home .home > .container-fluid {
@@ -18,11 +18,11 @@ body.site-home .home-slider {
   max-width: 1180px;
   margin: 0 auto;
   padding: clamp(1.3rem, 2vw, 1.9rem) clamp(1.35rem, 2.35vw, 2.1rem);
-  border: 1px solid rgba(var(--lts-accent-rgb), 0.07);
+  border: 1px solid rgba(var(--lts-ink-rgb), 0.1);
   border-radius: 30px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(249, 253, 253, 0.5)),
-    radial-gradient(circle at 92% 10%, rgba(var(--lts-aqua-rgb), 0.1), transparent 24rem);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(248, 248, 249, 0.82)),
+    radial-gradient(circle at 92% 10%, rgba(var(--lts-aqua-rgb), 0.04), transparent 24rem);
   box-shadow: 0 22px 60px rgba(var(--lts-ink-rgb), 0.055);
 }
 
@@ -279,11 +279,11 @@ body.site-home .hero-network-visual {
   align-items: center;
   justify-content: center;
   padding: clamp(0.55rem, 1.2vw, 0.95rem);
-  border: 1px solid rgba(var(--lts-accent-rgb), 0.08);
+  border: 1px solid rgba(var(--lts-ink-rgb), 0.11);
   border-radius: 24px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(248, 252, 252, 0.58)),
-    radial-gradient(circle at 52% 46%, rgba(var(--lts-aqua-rgb), 0.12), transparent 62%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 247, 248, 0.72)),
+    radial-gradient(circle at 52% 46%, rgba(var(--lts-aqua-rgb), 0.07), transparent 62%);
   box-shadow: 0 16px 44px rgba(var(--lts-ink-rgb), 0.052);
 }
 
@@ -292,7 +292,7 @@ body.site-home .hero-network-visual::before {
   position: absolute;
   inset: 8% 5% 10%;
   border-radius: 42px;
-  background: radial-gradient(circle at 50% 50%, rgba(var(--lts-aqua-rgb), 0.17), rgba(var(--lts-aqua-rgb), 0) 68%);
+  background: radial-gradient(circle at 50% 50%, rgba(var(--lts-aqua-rgb), 0.09), rgba(var(--lts-aqua-rgb), 0) 68%);
   filter: blur(22px);
   pointer-events: none;
 }
@@ -309,6 +309,7 @@ body.site-home .hero-network-visual img {
   background: transparent;
   box-shadow: none;
   padding: 0;
+  filter: saturate(0.62) contrast(1.04);
 }
 
 body.site-home .hero-keywords {
@@ -332,10 +333,10 @@ body.site-home .hero-keyword {
   gap: 0.35rem;
   min-height: 27px;
   padding: 0.28rem 0.56rem;
-  border: 1px solid rgba(var(--lts-ink-rgb), 0.085);
+  border: 1px solid rgba(var(--lts-ink-rgb), 0.12);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 5px 12px rgba(26, 52, 85, 0.032);
+  box-shadow: 0 5px 12px rgba(var(--lts-ink-rgb), 0.035);
   color: var(--lts-accent-blue);
   font-family: var(--lts-font-ui);
   font-size: var(--lts-type-sm);

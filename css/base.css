@@ -6,35 +6,35 @@
    ============================================================ */
 
 :root {
-  --lts-ink: #132033;
-  --lts-text: #435167;
-  --lts-muted: #6b788c;
-  --lts-accent: #0b706b;
-  --lts-accent-dark: #07534f;
-  --lts-accent-blue: #255270;
-  --lts-accent-rgb: 11, 112, 107;
-  --lts-aqua-rgb: 96, 190, 184;
-  --lts-ink-rgb: 19, 32, 51;
-  --lts-accent-soft: rgba(11, 112, 107, 0.095);
-  --lts-nav-text: #3f4a5d;
-  --lts-title-ink: #132033;
-  --lts-border: rgba(19, 32, 51, 0.12);
-  --lts-border-strong: rgba(19, 32, 51, 0.18);
-  --lts-paper: #fbfaf6;
-  --lts-paper-cool: #f4faf9;
-  --lts-slate-soft: #eef3f2;
-  --lts-tool-moss: #557a59;
-  --lts-tool-blue: #426994;
-  --lts-tool-amber: #9a6b24;
+  --lts-ink: #101318;
+  --lts-text: #252a32;
+  --lts-muted: #5f6670;
+  --lts-accent: #2457d6;
+  --lts-accent-dark: #173b96;
+  --lts-accent-blue: #2457d6;
+  --lts-accent-rgb: 36, 87, 214;
+  --lts-aqua-rgb: 36, 87, 214;
+  --lts-ink-rgb: 16, 19, 24;
+  --lts-accent-soft: rgba(36, 87, 214, 0.085);
+  --lts-nav-text: #20242b;
+  --lts-title-ink: #101318;
+  --lts-border: rgba(16, 19, 24, 0.12);
+  --lts-border-strong: rgba(16, 19, 24, 0.18);
+  --lts-paper: #ffffff;
+  --lts-paper-cool: #f7f7f7;
+  --lts-slate-soft: #eeeeef;
+  --lts-tool-moss: #3e4642;
+  --lts-tool-blue: #2457d6;
+  --lts-tool-amber: #5b5142;
   --lts-surface: #ffffff;
-  --lts-surface-soft: #f6faf9;
-  --lts-shadow: 0 14px 36px rgba(19, 32, 51, 0.07);
-  --lts-shadow-hover: 0 20px 50px rgba(19, 32, 51, 0.12);
-  --lts-shadow-soft: 0 9px 24px rgba(19, 32, 51, 0.05);
-  --lts-shadow-shell: 0 18px 50px rgba(19, 32, 51, 0.065);
-  --lts-icon-gradient: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(229, 244, 241, 0.92));
-  --lts-icon-glow: 0 10px 24px rgba(11, 112, 107, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.92);
-  --lts-icon-ring: rgba(var(--lts-accent-rgb), 0.18);
+  --lts-surface-soft: #f7f7f7;
+  --lts-shadow: 0 14px 34px rgba(16, 19, 24, 0.055);
+  --lts-shadow-hover: 0 20px 48px rgba(16, 19, 24, 0.105);
+  --lts-shadow-soft: 0 8px 22px rgba(16, 19, 24, 0.04);
+  --lts-shadow-shell: 0 18px 48px rgba(16, 19, 24, 0.05);
+  --lts-icon-gradient: linear-gradient(145deg, #ffffff, #f3f3f4);
+  --lts-icon-glow: 0 10px 22px rgba(36, 87, 214, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  --lts-icon-ring: rgba(var(--lts-accent-rgb), 0.2);
   --lts-radius-shell: 18px;
   --lts-radius-card: 20px;
   --lts-container: 1160px;
@@ -57,7 +57,7 @@
   --lts-type-lead: clamp(1.02rem, 1.05vw, 1.12rem);
   --lts-type-card-title: clamp(1.08rem, 1.12vw, 1.2rem);
   --lts-type-entry-title: clamp(1.16rem, 1.25vw, 1.32rem);
-  --lts-tab-active-bg: linear-gradient(180deg, rgba(248, 252, 251, 0.98), rgba(229, 244, 241, 0.94));
+  --lts-tab-active-bg: linear-gradient(180deg, #ffffff, #f3f5fb);
   --lts-font-ui: "Poppins", "Inter", system-ui, sans-serif;
   --lts-font-body: "Inter", "Poppins", system-ui, sans-serif;
   --lts-font-brand: "Aileron", "Poppins", system-ui, sans-serif;
@@ -89,7 +89,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 8% 0%, rgba(var(--lts-accent-rgb), 0.045), transparent 28rem),
+    radial-gradient(circle at 8% 0%, rgba(var(--lts-accent-rgb), 0.035), transparent 28rem),
     linear-gradient(180deg, #ffffff 0%, var(--lts-paper) 100%);
   color: var(--lts-ink);
   font-family: var(--lts-font-body);
@@ -106,7 +106,7 @@ body.member-profile-body,
 .publications-page-body,
 .teaching-page-body {
   background:
-    radial-gradient(circle at top left, rgba(var(--lts-accent-rgb), 0.045), transparent 27rem),
+    radial-gradient(circle at top left, rgba(var(--lts-accent-rgb), 0.03), transparent 27rem),
     linear-gradient(180deg, #ffffff 0%, var(--lts-paper) 100%);
 }
 
@@ -397,14 +397,14 @@ body.site-subpage .page-section-title {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  background: rgba(var(--lts-accent-rgb), 0.08);
+  background: rgba(var(--lts-accent-rgb), 0.095);
   color: var(--lts-accent-dark);
 }
 
 .navbar-nav .nav-link.active {
-  background: linear-gradient(180deg, rgba(var(--lts-accent-rgb), 0.14), rgba(var(--lts-accent-rgb), 0.08));
+  background: linear-gradient(180deg, rgba(var(--lts-accent-rgb), 0.16), rgba(var(--lts-accent-rgb), 0.09));
   color: var(--lts-accent-dark);
-  box-shadow: inset 0 0 0 1px rgba(var(--lts-accent-rgb), 0.12);
+  box-shadow: inset 0 0 0 1px rgba(var(--lts-accent-rgb), 0.2);
 }
 
 .navbar-toggler {

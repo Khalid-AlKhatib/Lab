@@ -1,28 +1,28 @@
 :root {
 
-  --kaf-bg:#fbfaf6;
+  --kaf-bg:#ffffff;
 
   --kaf-surface:#ffffff;
 
-  --kaf-surface-soft:#f6faf9;
+  --kaf-surface-soft:#f8faf9;
 
-  --kaf-line:rgba(19,32,51,.1);
+  --kaf-line:rgba(16,19,24,.1);
 
-  --kaf-line-strong:rgba(19,32,51,.16);
+  --kaf-line-strong:rgba(16,19,24,.16);
 
-  --kaf-text:#132033;
+  --kaf-text:#101318;
 
-  --kaf-muted:#6b788c;
+  --kaf-muted:#5f6670;
 
-  --kaf-accent:#0b706b;
+  --kaf-accent:#2457d6;
 
-  --kaf-accent-deep:#07534f;
+  --kaf-accent-deep:#173b96;
 
-  --kaf-accent-soft:rgba(11,112,107,.09);
+  --kaf-accent-soft:rgba(36,87,214,.09);
 
-  --kaf-shadow:0 18px 40px rgba(19,32,51,.07);
+  --kaf-shadow:0 18px 40px rgba(16,19,24,.07);
 
-  --kaf-shadow-soft:0 10px 24px rgba(19,32,51,.05);
+  --kaf-shadow-soft:0 10px 24px rgba(16,19,24,.05);
 
   --kaf-radius-xl:26px;
 
@@ -38,14 +38,14 @@ html {
 
 body.member-profile-body,body.kaf-body {
   font-family:'Inter',sans-serif;
-  background:linear-gradient(180deg,#fff 0%,#fbfaf6 100%);
+  background:linear-gradient(180deg,#fff 0%,#ffffff 100%);
   color:var(--kaf-text)
 }
 
 .kaf-page {
   position:relative;
   padding:92px 0 40px;
-  background:radial-gradient(circle at 12% 8%, rgba(11,112,107,.04), transparent 22%),linear-gradient(180deg,#fff 0%,#fbfaf6 100%);
+  background:radial-gradient(circle at 12% 8%, rgba(36,87,214,.04), transparent 22%),linear-gradient(180deg,#fff 0%,#ffffff 100%);
   overflow:clip
 }
 
@@ -63,7 +63,7 @@ body.member-profile-body,body.kaf-body {
   align-items:center;
   gap:8px;
   width:fit-content;
-  color:#6b788c;
+  color:#5f6670;
   text-decoration:none;
   font-size:.84rem;
   font-weight:600;
@@ -96,15 +96,15 @@ body.member-profile-body,body.kaf-body {
   padding:9px;
   border-radius:24px;
   background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(249,248,247,.98));
-  border:1px solid rgba(19,32,51,.08);
-  box-shadow:0 12px 26px rgba(19,32,51,.05)
+  border:1px solid rgba(16,19,24,.08);
+  box-shadow:0 12px 26px rgba(16,19,24,.05)
 }
 
 .kaf-photo {
   aspect-ratio:.92/1;
   overflow:hidden;
   border-radius:18px;
-  background:#eef3f2
+  background:#f0f3f3
 }
 
 .kaf-photo img {
@@ -121,7 +121,7 @@ body.member-profile-body,body.kaf-body {
   inset:auto 24px -12px 24px;
   height:20px;
   border-radius:999px;
-  background:radial-gradient(circle, rgba(11,112,107,.14), transparent 68%);
+  background:radial-gradient(circle, rgba(36,87,214,.14), transparent 68%);
   filter:blur(16px);
   pointer-events:none
 }
@@ -132,7 +132,7 @@ body.member-profile-body,body.kaf-body {
   padding:14px;
   border-radius:20px;
   background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(252,251,250,.98));
-  border:1px solid rgba(19,32,51,.08);
+  border:1px solid rgba(16,19,24,.08);
   box-shadow:var(--kaf-shadow-soft)
 }
 
@@ -152,15 +152,15 @@ body.member-profile-body,body.kaf-body {
   text-decoration:none;
   color:var(--kaf-text);
   background:rgba(255,255,255,.95);
-  border:1px solid rgba(19,32,51,.08);
+  border:1px solid rgba(16,19,24,.08);
   transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease,background .18s ease
 }
 
 .kaf-brand-card:hover {
   transform:translateY(-1px);
   background:#fff;
-  border-color:rgba(11,112,107,.16);
-  box-shadow:0 10px 22px rgba(19,32,51,.05)
+  border-color:rgba(36,87,214,.16);
+  box-shadow:0 10px 22px rgba(16,19,24,.05)
 }
 
 .kaf-brand-main {
@@ -188,7 +188,7 @@ body.member-profile-body,body.kaf-body {
 }
 
 .kaf-brand-card .lts-icon {
-  color:#6b788c;
+  color:#5f6670;
   font-size:.92rem
 }
 
@@ -205,18 +205,18 @@ body.member-profile-body,body.kaf-body {
   min-height:38px;
   border-radius:14px;
   background:#fff;
-  border:1px solid rgba(19,32,51,.08);
+  border:1px solid rgba(16,19,24,.08);
   color:#5f6c7e;
   text-decoration:none;
-  box-shadow:0 8px 18px rgba(19,32,51,.03);
+  box-shadow:0 8px 18px rgba(16,19,24,.03);
   transition:border-color .18s ease,color .18s ease,background .18s ease,transform .18s ease
 }
 
 .kaf-mini-link:hover {
   transform:translateY(-1px);
   color:var(--kaf-accent-deep);
-  border-color:rgba(11,112,107,.16);
-  background:rgba(11,112,107,.04)
+  border-color:rgba(36,87,214,.16);
+  background:rgba(36,87,214,.04)
 }
 
 .kaf-mini-link .lts-icon,.kaf-mini-link span {
@@ -241,7 +241,7 @@ body.member-profile-body,body.kaf-body {
   padding:5px 10px;
   border-radius:999px;
   background:var(--kaf-accent-soft);
-  color:#07534f;
+  color:#173b96;
   font-size:.7rem;
   font-weight:800;
   letter-spacing:.05em;
@@ -265,7 +265,7 @@ body.member-profile-body,body.kaf-body {
 
 .kaf-role {
   margin:0;
-  color:#6b788c;
+  color:#5f6670;
   font-size:.95rem;
   font-weight:650;
   letter-spacing:-.01em
@@ -297,7 +297,7 @@ body.member-profile-body,body.kaf-body {
 }
 
 .kaf-meta-line .lts-icon {
-  color:#0b706b;
+  color:#2457d6;
   font-size:.95rem
 }
 
@@ -325,12 +325,12 @@ body.member-profile-body,body.kaf-body {
   padding:8px 12px;
   border-radius:999px;
   background:rgba(255,255,255,.95);
-  border:1px solid rgba(19,32,51,.08);
-  color:#435167;
+  border:1px solid rgba(16,19,24,.08);
+  color:#252a32;
   font-size:.82rem;
   font-weight:700;
   letter-spacing:-.01em;
-  box-shadow:0 8px 18px rgba(19,32,51,.03)
+  box-shadow:0 8px 18px rgba(16,19,24,.03)
 }
 
 .kaf-chip-row {
@@ -355,7 +355,7 @@ body.member-profile-body,body.kaf-body {
   border-radius:20px;
   background:rgba(255,255,255,.94);
   border:1px solid var(--kaf-line);
-  box-shadow:0 12px 24px rgba(19,32,51,.04);
+  box-shadow:0 12px 24px rgba(16,19,24,.04);
   backdrop-filter:blur(14px)
 }
 
@@ -369,7 +369,7 @@ body.member-profile-body,body.kaf-body {
   border:0;
   border-radius:14px;
   background:transparent;
-  color:#6b788c;
+  color:#5f6670;
   font-size:.81rem;
   font-weight:650;
   line-height:1.1;
@@ -392,8 +392,8 @@ body.member-profile-body,body.kaf-body {
 
 .kaf-tab.active {
   color:var(--kaf-text);
-  background:linear-gradient(180deg, rgba(11,112,107,.11), rgba(11,112,107,.04));
-  box-shadow:inset 0 0 0 1px rgba(11,112,107,.08)
+  background:linear-gradient(180deg, rgba(36,87,214,.11), rgba(36,87,214,.04));
+  box-shadow:inset 0 0 0 1px rgba(36,87,214,.08)
 }
 
 .kaf-panel {
@@ -447,7 +447,7 @@ body.member-profile-body,body.kaf-body {
   height:36px;
   flex:0 0 36px;
   border-radius:12px;
-  background:rgba(11,112,107,.08);
+  background:rgba(36,87,214,.08);
   color:var(--kaf-accent)
 }
 
@@ -485,7 +485,7 @@ body.member-profile-body,body.kaf-body {
   top:4px;
   bottom:4px;
   width:2px;
-  background:linear-gradient(180deg, rgba(11,112,107,.42), rgba(11,112,107,.08))
+  background:linear-gradient(180deg, rgba(36,87,214,.42), rgba(36,87,214,.08))
 }
 
 .kaf-time-item {
@@ -502,7 +502,7 @@ body.member-profile-body,body.kaf-body {
   height:10px;
   border-radius:999px;
   background:var(--kaf-accent);
-  box-shadow:0 0 0 4px rgba(11,112,107,.10)
+  box-shadow:0 0 0 4px rgba(36,87,214,.10)
 }
 
 .kaf-time-item span {
@@ -526,7 +526,7 @@ body.member-profile-body,body.kaf-body {
 
 .kaf-time-item p {
   margin:4px 0 0;
-  color:#435167;
+  color:#252a32;
   font-size:.84rem;
   line-height:1.62
 }
@@ -540,7 +540,7 @@ body.member-profile-body,body.kaf-body {
   padding:13px 14px;
   border-radius:18px;
   background:linear-gradient(180deg, rgba(252,251,250,.98), rgba(255,255,255,.98));
-  border:1px solid rgba(19,32,51,.07)
+  border:1px solid rgba(16,19,24,.07)
 }
 
 .kaf-subcard h3 {
@@ -561,7 +561,7 @@ body.member-profile-body,body.kaf-body {
 .kaf-list li,.kaf-simple-list li {
   position:relative;
   padding-left:15px;
-  color:#435167;
+  color:#252a32;
   font-size:.84rem;
   line-height:1.62
 }
@@ -578,7 +578,7 @@ body.member-profile-body,body.kaf-body {
   width:6px;
   height:6px;
   border-radius:999px;
-  background:rgba(11,112,107,.78)
+  background:rgba(36,87,214,.78)
 }
 
 .kaf-note {
@@ -587,9 +587,9 @@ body.member-profile-body,body.kaf-body {
   gap:10px;
   padding:12px 14px;
   border-radius:18px;
-  background:rgba(11,112,107,.06);
-  border:1px solid rgba(11,112,107,.10);
-  color:#435167;
+  background:rgba(36,87,214,.06);
+  border:1px solid rgba(36,87,214,.10);
+  color:#252a32;
   font-size:.84rem;
   line-height:1.6
 }
@@ -608,7 +608,7 @@ body.member-profile-body,body.kaf-body {
 .kaf-details {
   border-radius:18px;
   overflow:hidden;
-  border:1px solid rgba(19,32,51,.08);
+  border:1px solid rgba(16,19,24,.08);
   background:linear-gradient(180deg, rgba(252,251,250,.98), rgba(255,255,255,.97))
 }
 
@@ -678,14 +678,14 @@ body.member-profile-body,body.kaf-body {
   text-decoration:none;
   color:inherit;
   background:linear-gradient(180deg, rgba(252,251,250,.98), rgba(255,255,255,.98));
-  border:1px solid rgba(19,32,51,.08);
+  border:1px solid rgba(16,19,24,.08);
   transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease
 }
 
 .kaf-cta:hover {
   transform:translateY(-1px);
-  border-color:rgba(11,112,107,.15);
-  box-shadow:0 12px 24px rgba(19,32,51,.04)
+  border-color:rgba(36,87,214,.15);
+  box-shadow:0 12px 24px rgba(16,19,24,.04)
 }
 
 .kaf-cta strong {
@@ -699,7 +699,7 @@ body.member-profile-body,body.kaf-body {
 .kaf-cta span {
   display:block;
   margin-top:3px;
-  color:#6b788c;
+  color:#5f6670;
   font-size:.8rem;
   line-height:1.52
 }
@@ -719,7 +719,7 @@ body.member-profile-body,body.kaf-body {
   padding:15px;
   border-radius:20px;
   background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(252,251,250,.97));
-  border:1px solid rgba(19,32,51,.08)
+  border:1px solid rgba(16,19,24,.08)
 }
 
 .kaf-award .year {
@@ -729,8 +729,8 @@ body.member-profile-body,body.kaf-body {
   min-height:28px;
   padding:5px 10px;
   border-radius:999px;
-  background:rgba(11,112,107,.08);
-  color:#07534f;
+  background:rgba(36,87,214,.08);
+  color:#173b96;
   font-size:.73rem;
   font-weight:800;
   letter-spacing:.03em;
@@ -752,7 +752,7 @@ body.member-profile-body,body.kaf-body {
   align-items:center;
   justify-content:center;
   border-radius:10px;
-  background:rgba(11,112,107,.08);
+  background:rgba(36,87,214,.08);
   color:var(--kaf-accent)
 }
 
@@ -766,14 +766,14 @@ body.member-profile-body,body.kaf-body {
 
 .kaf-award p {
   margin:0;
-  color:#435167;
+  color:#252a32;
   font-size:.84rem;
   line-height:1.62
 }
 
 .kaf-footer {
   text-align:center;
-  color:#6b788c;
+  color:#5f6670;
   font-size:.82rem;
   line-height:1.6
 }
