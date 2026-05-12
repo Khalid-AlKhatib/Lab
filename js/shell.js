@@ -34,11 +34,11 @@
   }
 
   function brandLabMarkup() {
-    return '<span class="brand-lab-mark" aria-hidden="true">Lab</span>';
+    return '<span class="brand-lab-seal" aria-hidden="true">LAB</span>';
   }
 
   function navMarkup(prefix, active) {
-    var logo = prefix + 'images/optimized/argsbase-wordmark.png';
+    var logo = prefix + 'images/optimized/argsbase-wordmark-transparent.png';
     var home = '/';
     var links = NAV_ITEMS.map(function (item) {
       var isActive = item.key === active;
@@ -59,7 +59,7 @@
   }
 
   function footerMarkup(prefix) {
-    var logo = prefix + 'images/optimized/argsbase-wordmark.png';
+    var logo = prefix + 'images/optimized/argsbase-wordmark-transparent.png';
     return '<footer class="site-footer"><div class="container">'
       + '<div class="site-footer-grid">'
       + '<div class="site-footer-brand">'

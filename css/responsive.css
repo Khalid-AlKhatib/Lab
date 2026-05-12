@@ -65,15 +65,14 @@
     height: 46px;
   }
 
-  .brand-lab-mark {
+  .brand-lab-seal {
     margin-left: 0;
-    padding: 0.16rem 0.36rem 0.14rem;
-    font-size: 0.72rem;
+    padding-left: 0.48rem;
+    font-size: 0.58rem;
   }
 
-  .brand-lab-mark::before {
-    width: 0.24rem;
-    margin-right: 0.28rem;
+  .brand-lab-seal::before {
+    height: 1.2rem;
   }
 
   .navbar-toggler {
