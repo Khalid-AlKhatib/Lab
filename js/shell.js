@@ -79,7 +79,7 @@
       + '</ul></div>'
       + '<div><h3>Contact</h3><ul>'
       + '<li>Oude Kijk in \'t Jatstraat 26<br/>9712 EK Groningen</li>'
-      + '<li><a href="mailto:khalid.alkhatib@rug.nl">khalid.alkhatib@rug.nl</a></li>'
+      + '<li><a href="mailto:team@argsbase.net">team@argsbase.net</a></li>'
       + '<li><a href="https://x.com/GroNlp" rel="noopener noreferrer" target="_blank">GroNLP on X</a></li>'
       + '</ul></div>'
       + '</div><div class="site-footer-bottom"><span>ArgsBase Lab · University of Groningen</span><span>Updated May 2026</span></div>'
