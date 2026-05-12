@@ -33,15 +33,12 @@
     return prefix + item.path;
   }
 
-  function brandTextMarkup() {
-    return '<span class="brand-text" aria-hidden="true">'
-      + '<span class="brand-title"><span class="brand-name"><span class="brand-args">Args</span><span class="brand-base">Base</span></span><span class="brand-lab">LAB</span></span>'
-      + '<span class="brand-subtitle">AI for reasoning &amp; society</span>'
-      + '</span>';
+  function brandLabMarkup() {
+    return '<span class="brand-lab-mark" aria-hidden="true">Lab</span>';
   }
 
   function navMarkup(prefix, active) {
-    var logo = prefix + 'images/optimized/logo-nav.png';
+    var logo = prefix + 'images/optimized/argsbase-wordmark.png';
     var home = '/';
     var links = NAV_ITEMS.map(function (item) {
       var isActive = item.key === active;
@@ -51,8 +48,8 @@
     return '<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">'
       + '<div class="container-fluid custom-container">'
       + '<a aria-label="ArgsBase Lab homepage" class="navbar-brand logo brand-lockup" href="' + home + '">'
-      + '<img alt="" aria-hidden="true" class="brand-logo-mark" width="40" height="40" src="' + logo + '"/>'
-      + brandTextMarkup()
+      + '<img alt="ArgsBase Lab" class="brand-wordmark-img" width="420" height="150" src="' + logo + '"/>'
+      + brandLabMarkup()
       + '</a>'
       + '<button aria-controls="navbarCollapse" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">'
       + '<span aria-hidden="true" class="navbar-toggle-bars"><span></span><span></span><span></span></span>'
@@ -62,13 +59,13 @@
   }
 
   function footerMarkup(prefix) {
-    var logo = prefix + 'images/optimized/logo-nav.png';
+    var logo = prefix + 'images/optimized/argsbase-wordmark.png';
     return '<footer class="site-footer"><div class="container">'
       + '<div class="site-footer-grid">'
       + '<div class="site-footer-brand">'
       + '<a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="/">'
-      + '<img alt="" aria-hidden="true" class="brand-logo-mark" width="40" height="40" src="' + logo + '"/>'
-      + brandTextMarkup()
+      + '<img alt="ArgsBase Lab" class="brand-wordmark-img" width="420" height="150" src="' + logo + '"/>'
+      + brandLabMarkup()
       + '</a>'
       + '<p>AI for reasoning, critical thinking, and society.</p>'
       + '</div>'

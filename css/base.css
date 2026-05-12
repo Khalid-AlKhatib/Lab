@@ -314,111 +314,59 @@ body.site-subpage .page-section-title {
 .brand-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 0.58rem;
-  flex: 0 1 292px;
+  gap: 0.5rem;
+  flex: 0 1 270px;
   width: auto;
   min-width: 0;
-  max-width: min(48vw, 292px);
+  max-width: min(48vw, 270px);
   margin: 0;
   overflow: visible;
   text-decoration: none;
 }
 
-.brand-logo-mark {
+.brand-wordmark-img {
   display: block;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 auto;
+  width: auto;
+  height: 54px;
+  max-width: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(var(--lts-accent-rgb), 0.16));
+}
+
+.brand-lab-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  margin-left: 0.1rem;
+  padding: 0.2rem 0.48rem 0.18rem;
+  border: 1px solid rgba(var(--lts-accent-rgb), 0.22);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(var(--lts-accent-rgb), 0.07)),
+    rgba(255, 255, 255, 0.76);
+  color: var(--lts-accent-dark);
+  font-family: var(--lts-font-serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(var(--lts-ink-rgb), 0.055);
+  transform: translateY(0.02rem);
+  white-space: nowrap;
+}
+
+.brand-lab-mark::before {
+  width: 0.32rem;
+  height: 1px;
+  margin-right: 0.38rem;
+  background: rgba(var(--lts-accent-rgb), 0.38);
+  content: "";
 }
 
 .navbar-brand img,
 .navbar-brand.logo img {
   object-fit: contain;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  line-height: 1;
-}
-
-.brand-title {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.46rem;
-}
-
-.brand-name {
-  position: relative;
-  display: inline-flex;
-  align-items: baseline;
-  color: var(--lts-title-ink);
-  font-family: "New Tech", "Aileron", "Poppins", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.32rem;
-  font-weight: 500;
-  letter-spacing: -0.07em;
-  line-height: 1;
-}
-
-.brand-args,
-.brand-base {
-  display: inline-block;
-}
-
-.brand-base {
-  color: var(--lts-accent-dark);
-  margin-left: -0.03em;
-}
-
-.brand-lab {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 20px;
-  padding: 0.15rem 0.46rem 0.12rem 0.72rem;
-  border: 1px solid rgba(var(--lts-accent-rgb), 0.36);
-  border-left-color: rgba(var(--lts-accent-rgb), 0.64);
-  border-radius: 7px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(var(--lts-accent-rgb), 0.13)),
-    rgba(var(--lts-accent-rgb), 0.06);
-  color: var(--lts-accent-dark);
-  font-family: "New Tech", "Aileron", "Poppins", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  line-height: 1;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.48),
-    0 5px 14px rgba(var(--lts-accent-rgb), 0.08);
-}
-
-.brand-lab::before {
-  position: absolute;
-  top: 50%;
-  left: 0.36rem;
-  width: 0.26rem;
-  height: 0.26rem;
-  border-radius: 999px;
-  background: var(--lts-accent);
-  box-shadow: 0 0 0 3px rgba(var(--lts-accent-rgb), 0.12);
-  content: "";
-  transform: translateY(-50%);
-}
-
-.brand-subtitle {
-  margin-top: 0.25rem;
-  color: var(--lts-muted);
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .navbar-collapse {

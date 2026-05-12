@@ -166,23 +166,17 @@
 }
 
 .site-footer-brand .footer-brand-lockup {
-  gap: 0.64rem;
+  gap: 0.6rem;
   width: fit-content;
   text-decoration: none;
 }
 
-.site-footer-brand .brand-logo-mark {
-  width: 42px;
-  height: 42px;
+.site-footer-brand .brand-wordmark-img {
+  height: 64px;
 }
 
-.site-footer-brand .brand-name {
-  font-size: clamp(1.22rem, 1.35vw, 1.42rem);
-}
-
-.site-footer-brand .brand-subtitle {
-  display: inline-block;
-  font-size: 0.68rem;
+.site-footer-brand .brand-lab-mark {
+  font-size: 0.9rem;
 }
 
 .site-footer-grid > * {

@@ -57,8 +57,23 @@
   .navbar-brand {
     flex: 0 1 calc(100% - 70px);
     width: auto;
-    max-width: min(calc(100% - 70px), 220px);
+    max-width: min(calc(100% - 70px), 222px);
     min-width: 0;
+  }
+
+  .brand-wordmark-img {
+    height: 46px;
+  }
+
+  .brand-lab-mark {
+    margin-left: 0;
+    padding: 0.16rem 0.36rem 0.14rem;
+    font-size: 0.72rem;
+  }
+
+  .brand-lab-mark::before {
+    width: 0.24rem;
+    margin-right: 0.28rem;
   }
 
   .navbar-toggler {
@@ -70,26 +85,6 @@
     right: 16px;
     transform: translateY(-50%);
     z-index: 3;
-  }
-
-  .brand-logo-mark,
-  .navbar-brand.logo .brand-logo-mark {
-    width: 36px;
-    height: 36px;
-  }
-
-  .brand-name {
-    font-size: 1.12rem;
-  }
-
-  .brand-lab {
-    min-height: 18px;
-    padding: 0.12rem 0.4rem 0.1rem 0.62rem;
-    font-size: 0.56rem;
-  }
-
-  .brand-subtitle {
-    display: none;
   }
 
   .navbar-collapse {
