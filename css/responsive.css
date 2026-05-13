@@ -350,7 +350,7 @@
 
   .research-accordion .accordion-button > span:not(.accordion-icon-tile),
   .research-accordion .accordion-title {
-    font-size: var(--lts-type-card-title);
+    font-size: var(--lts-type-base);
     overflow-wrap: anywhere;
   }
 
@@ -494,6 +494,7 @@
   }
 
   .research-accordion .accordion-icon-tile {
+    display: none;
     width: 40px;
     height: 40px;
     flex-basis: 40px;
