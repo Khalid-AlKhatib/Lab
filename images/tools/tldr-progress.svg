@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="tldr-title">
+  <title id="tldr-title">TL;DR Progress mark</title>
+  <rect x="8" y="14" width="48" height="36" rx="10" fill="#ffffff" stroke="#b7791f" stroke-width="3"/>
+  <path d="M20 26h24M20 34h16" fill="none" stroke="#12324a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 43h8l4-6 5 8 4-5h5" fill="none" stroke="#1f8a8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="46" cy="43" r="3" fill="#b7791f"/>
+</svg>
