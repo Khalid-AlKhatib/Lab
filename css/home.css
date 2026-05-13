@@ -5,7 +5,7 @@ body.site-home .home {
   padding-bottom: clamp(8px, 1vw, 14px);
   background:
     radial-gradient(circle at 78% 14%, rgba(var(--lts-aqua-rgb), 0.04), transparent 23rem),
-    radial-gradient(circle at 12% 18%, rgba(16, 19, 24, 0.035), transparent 21rem);
+    radial-gradient(circle at 12% 18%, rgba(20, 33, 43, 0.035), transparent 21rem);
 }
 
 body.site-home .home > .container-fluid {
