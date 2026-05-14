@@ -2,6 +2,12 @@
   "2026": [
     {
       "date": "2026",
+      "title": "ArabicNLP 2026 shared task on cross-genre Arabic argument mining",
+      "desc": "ArgsBase Lab will organise a shared task at ArabicNLP 2026 in collaboration with QatarDebate. The task will focus on cross-genre Arabic argument mining, with more details coming soon.",
+      "url": "https://arabicnlp2026.sigarab.org/"
+    },
+    {
+      "date": "2026",
       "title": "Shonan Seminar on argumentation and recommender systems",
       "desc": "Khalid Al-Khatib attended NII Shonan Meeting No.239 and gave a talk on hybrid argumentation and recommendation systems.",
       "url": "https://shonan.nii.ac.jp/seminars/239/"
