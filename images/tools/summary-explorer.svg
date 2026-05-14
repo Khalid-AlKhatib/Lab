@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="summary-title">
   <title id="summary-title">Summary Explorer mark</title>
-  <rect x="10" y="9" width="36" height="46" rx="8" fill="#ffffff" stroke="#176b87" stroke-width="3"/>
-  <path d="M20 24h16M20 32h20M20 40h12" fill="none" stroke="#176b87" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="43" cy="42" r="9" fill="#eef4f6" stroke="#1f8a8a" stroke-width="3"/>
-  <path d="m49.5 48.5 6.5 6.5" fill="none" stroke="#12324a" stroke-width="4" stroke-linecap="round"/>
+  <rect x="12" y="13" width="29" height="34" rx="7" fill="#f7f9fb" stroke="#176b87" stroke-width="2.8"/>
+  <rect x="20" y="9" width="29" height="34" rx="7" fill="#ffffff" stroke="#1f8a8a" stroke-width="2.8"/>
+  <path d="M27 22h14M27 29h11M27 36h8" fill="none" stroke="#12324a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="43" cy="42" r="8.5" fill="#ffffff" stroke="#176b87" stroke-width="3"/>
+  <path d="m49 48 6 6" fill="none" stroke="#176b87" stroke-width="4" stroke-linecap="round"/>
 </svg>

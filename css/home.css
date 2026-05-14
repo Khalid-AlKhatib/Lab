@@ -587,9 +587,10 @@ body.site-home #tools .tools-section-intro {
 
 #tools .tool-wordmark {
   display: block;
-  width: min(132px, 100%);
+  width: min(124px, 100%);
   height: auto;
-  max-height: 38px;
+  max-height: 36px;
+  mix-blend-mode: multiply;
   object-fit: contain;
   object-position: left center;
 }
