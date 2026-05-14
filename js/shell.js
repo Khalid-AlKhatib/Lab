@@ -60,7 +60,7 @@
 
   function footerMarkup(prefix) {
     var logo = prefix + 'images/optimized/argsbase-wordmark-transparent.png';
-    return '<footer class="site-footer"><div class="container">'
+    return '<footer class="site-footer" id="contact"><div class="container">'
       + '<div class="site-footer-grid">'
       + '<div class="site-footer-brand">'
       + '<a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="/">'
