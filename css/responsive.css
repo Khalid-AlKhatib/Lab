@@ -107,7 +107,6 @@
 
   .research-detail-meta,
   .research-page-body .research-overview-grid,
-  .about-lab-card,
   .collaboration-grid,
   .kaf-grid {
     grid-template-columns: 1fr;
