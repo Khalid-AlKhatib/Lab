@@ -1,16 +1,19 @@
 {
-  "2026": [
+  "2024": [
     {
-      "date": "2026",
-      "title": "ArabicNLP 2026 shared task on cross-genre Arabic argument mining",
-      "desc": "ArgsBase Lab will organise a shared task at ArabicNLP 2026 in collaboration with QatarDebate. The task will focus on cross-genre Arabic argument mining, with more details coming soon.",
-      "url": "https://arabicnlp2026.sigarab.org/"
+      "date": "2024",
+      "title": "TL;DR Progress at EACL 2024",
+      "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024."
     },
     {
-      "date": "2026",
-      "title": "Shonan Seminar on argumentation and recommender systems",
-      "desc": "Khalid Al-Khatib attended NII Shonan Meeting No.239 and gave a talk on hybrid argumentation and recommendation systems.",
-      "url": "https://shonan.nii.ac.jp/seminars/239/"
+      "date": "2024",
+      "title": "EMNLP 2024 publications",
+      "desc": "New work appeared on argument effectiveness across ideologies and on argumentation theory-driven prompting for implied misogynistic reasoning."
+    },
+    {
+      "date": "2024",
+      "title": "Summary and discussion analysis",
+      "desc": "The group continued work on long-discussion summarization and literature exploration tools linked to Webis and ArgsBase Lab research."
     }
   ],
   "2025": [
@@ -43,21 +46,18 @@
       "desc": "The group contributed new work on culturally-aware Arabic debate platforms, Arabic argument mining, narratives, and critical-question generation."
     }
   ],
-  "2024": [
+  "2026": [
     {
-      "date": "2024",
-      "title": "TL;DR Progress at EACL 2024",
-      "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024."
+      "date": "2026",
+      "title": "DALEEL 2026 shared task on cross-genre Arabic argument mining",
+      "desc": "ArgsBase Lab will organise the DALEEL 2026 shared task in collaboration with QatarDebate. The task focuses on cross-genre Arabic argument mining, with more details available on the official shared-task page.",
+      "url": "https://qatardebate.org/programs/academic-programs/daleel2026-shared-task/"
     },
     {
-      "date": "2024",
-      "title": "EMNLP 2024 publications",
-      "desc": "New work appeared on argument effectiveness across ideologies and on argumentation theory-driven prompting for implied misogynistic reasoning."
-    },
-    {
-      "date": "2024",
-      "title": "Summary and discussion analysis",
-      "desc": "The group continued work on long-discussion summarization and literature exploration tools linked to Webis and ArgsBase Lab research."
+      "date": "2026",
+      "title": "Shonan Seminar on argumentation and recommender systems",
+      "desc": "Khalid Al-Khatib attended NII Shonan Meeting No.239 and gave a talk on hybrid argumentation and recommendation systems.",
+      "url": "https://shonan.nii.ac.jp/seminars/239/"
     }
   ]
 }

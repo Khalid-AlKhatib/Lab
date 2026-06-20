@@ -1,14 +1,8 @@
 [
   {
-    "title": "University of Groningen vacancies",
-    "desc": "For current PhD, postdoctoral, and academic openings, follow the University of Groningen vacancies page.",
+    "title": "University of Groningen opportunities",
+    "desc": "For current PhD, postdoctoral, and academic openings, follow the university vacancies page.",
     "url": "https://www.rug.nl/about-ug/work-with-us/?lang=en",
-    "className": "open-position--notice"
-  },
-  {
-    "title": "Current PhD vacancies",
-    "desc": "A direct route to currently advertised doctoral openings at the University of Groningen.",
-    "url": "https://www.rug.nl/education/phd-programmes/prospective/current-phd-vacancies?lang=en",
     "className": "open-position--notice"
   }
 ]

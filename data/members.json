@@ -44,13 +44,28 @@
       "building": "1313",
       "room": "0305",
       "email": "fturkstra@rug.nl",
-      "role": "Research Assistant",
-      "status": "Alumnus",
       "cardLabel": "Research Assistant",
       "badgeClass": "student",
       "profileUrl": "../members/fturkstra.html"
     }
   ],
   "master": [],
-  "intern": []
+  "intern": [],
+  "externalCollaborators": [
+    {
+      "name": "Ali Al-Zawqari",
+      "image": "../images/optimized/anon-male-thumb.jpg",
+      "interests": [
+        "Argument Mining",
+        "Interpretable Machine Learning",
+        "Generative AI",
+        "Competitive Debates"
+      ],
+      "role": "Academic and Teaching Staff · Vrije Universiteit Brussel",
+      "status": "QatarDebate Research Fellow",
+      "cardLabel": "External collaborator",
+      "badgeClass": "student",
+      "profileUrl": "../members/ali-al-zawqari.html"
+    }
+  ]
 }
