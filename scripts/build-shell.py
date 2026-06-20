@@ -138,13 +138,27 @@ def update_body_base_path(html: str, prefix: str) -> str:
     return html[: match.start()] + "<body" + attrs + ">" + html[match.end() :]
 
 
-for page in PAGES:
-    html = page.read_text(encoding="utf-8")
+def render_page(page: Path) -> bool:
+    """Render shared shell blocks and return whether the file changed."""
+    original = page.read_text(encoding="utf-8")
     prefix = prefix_for(page)
-    html = update_body_base_path(html, prefix)
+    html = update_body_base_path(original, prefix)
     if not NAV_RE.search(html) or not FOOTER_RE.search(html):
         raise RuntimeError(f"Missing shared shell markers in {page.relative_to(ROOT)}")
     html = NAV_RE.sub(nav_html(prefix, active_for(html)), html, count=1)
     html = FOOTER_RE.sub(footer_html(prefix), html, count=1)
+    if html == original:
+        return False
     page.write_text(html, encoding="utf-8")
-    print("Rendered", page.relative_to(ROOT))
+    return True
+
+
+def main() -> int:
+    for page in PAGES:
+        status = "Updated" if render_page(page) else "Unchanged"
+        print(status, page.relative_to(ROOT))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

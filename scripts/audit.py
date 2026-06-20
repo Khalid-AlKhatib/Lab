@@ -9,11 +9,13 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
+sys.dont_write_bytecode = True
+
+from project import RELEASE_VERSION
+
 ROOT = Path(__file__).resolve().parents[1]
 HTML_FILES = [ROOT / "index.html", *sorted(ROOT.glob("*/*.html"))]
 AUTHORED_JS = [ROOT / "js/app.js", ROOT / "js/content.js", ROOT / "js/icons.js"]
-RELEASE_VERSION = "20260620-5"
-
 
 class PageParser(HTMLParser):
     def __init__(self) -> None:
@@ -167,6 +169,11 @@ def audit_javascript(errors: list[str]) -> None:
         errors.append("js/content.js: obsolete Research illustration rendering remains")
     if "function renderMembers" not in content:
         errors.append("js/content.js: member renderer is missing")
+    expected_offline_version = f'dataUrl("site-data.js") + "?v={RELEASE_VERSION}"'
+    if expected_offline_version not in content:
+        errors.append("js/content.js: offline fallback cache version is inconsistent")
+    if "raw.indexOf(\"\\\\\")" not in content:
+        errors.append("js/content.js: relative URL validation must reject backslashes")
 
 
 
@@ -191,7 +198,14 @@ def audit_package(errors: list[str]) -> None:
         errors.append("Generated Python cache files included: " + ", ".join(names))
 
 def audit_python(errors: list[str]) -> None:
-    for path in (ROOT / "scripts/build-site-data.py", ROOT / "scripts/build-shell.py", ROOT / "scripts/audit.py", ROOT / "scripts/package.py"):
+    for path in (
+        ROOT / "scripts/project.py",
+        ROOT / "scripts/build-site-data.py",
+        ROOT / "scripts/build-shell.py",
+        ROOT / "scripts/set-release-version.py",
+        ROOT / "scripts/audit.py",
+        ROOT / "scripts/package.py",
+    ):
         try:
             compile(path.read_text(encoding="utf-8"), str(path), "exec")
         except SyntaxError as error:

@@ -1,9 +1,9 @@
-function getDataBasePrefix() {
-  return (document.body && document.body.dataset.basePath) || "";
-}
-
 (function () {
   "use strict";
+
+  function getDataBasePrefix() {
+    return (document.body && document.body.dataset.basePath) || "";
+  }
 
   var DATA_BASE_PREFIX = getDataBasePrefix();
 
@@ -35,7 +35,7 @@ function getDataBasePrefix() {
 
     offlineDataPromise = new Promise(function (resolve, reject) {
       var script = document.createElement("script");
-      script.src = dataUrl("site-data.js") + "?v=20260619-20";
+      script.src = dataUrl("site-data.js") + "?v=20260620-5";
       script.onload = resolve;
       script.onerror = function () {
         reject(new Error("Failed to load offline data bundle"));
@@ -62,7 +62,7 @@ function getDataBasePrefix() {
   function safeUrl(value, options) {
     var raw = String(value == null ? "" : value).trim();
     var allowFragment = !options || options.allowFragment !== false;
-    if (!raw || /[\u0000-\u001F\u007F]/.test(raw)) return "";
+    if (!raw || /[\u0000-\u001F\u007F]/.test(raw) || raw.indexOf("\\") !== -1) return "";
     if (allowFragment && raw.charAt(0) === "#") return raw;
 
     var schemeMatch = raw.match(/^([a-z][a-z0-9+.-]*:|\/\/)/i);

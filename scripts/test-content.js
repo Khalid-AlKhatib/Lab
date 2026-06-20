@@ -45,6 +45,7 @@ function assert(condition, message) {
 assert(safeUrl("javascript:alert(1)") === "", "javascript: URL must be rejected");
 assert(safeUrl("data:text/html,test") === "", "data: URL must be rejected");
 assert(safeUrl("../members/member-1.html") === "../members/member-1.html", "relative URL must be preserved");
+assert(safeUrl("..\\members\\member-1.html") === "", "backslash-based relative URL must be rejected");
 assert(safeUrl("mailto:test@example.org") === "mailto:test@example.org", "mailto URL must be preserved");
 assert(siteAssetUrl("images/optimized/hero-land.webp") === "../images/optimized/hero-land.webp", "site-root asset path must use the page base prefix");
 assert(siteAssetUrl("../images/member.jpg") === "../images/member.jpg", "already-relative asset path must remain unchanged");

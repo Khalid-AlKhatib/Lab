@@ -1,88 +1,74 @@
 # ArgsBase Lab website
 
-A static, responsive website with shared shell generation and JSON-backed content.
+A static, responsive website with a generated shared shell and JSON-backed content. The deployed HTML, visual design, and interaction behavior are intentionally kept independent from the maintenance scripts.
 
 ## Requirements
 
-- Python 3.9 or newer for the optional build scripts
-- No third-party Python packages are required
-- A modern browser for local preview and deployment
+- Python 3.9 or newer for build, audit, and packaging tools
+- Node.js for the JavaScript utility tests
+- No third-party Python packages
+- A modern browser for preview and deployment
 
-## Structure
+## Project structure
 
-- `index.html` and section folders contain deployable static pages.
+- `index.html` and the section folders contain deployable static pages.
 - `css/site.css` is the single authored stylesheet.
-- `js/app.js` contains shared interaction behavior, including the reusable accessible tab controller.
-- `js/content.js` renders JSON-backed content, validates dynamic URLs, and loads offline fallback data only for `file://` previews.
-- `data/*.json` are the authoritative sources for data-driven sections. Research content is maintained directly in `research/research.html` because it uses a richer, page-specific structure.
-- `data/site-data.js` is generated for offline previews and must not be edited manually.
-- `scripts/build-site-data.py` regenerates the offline data bundle.
-- `scripts/build-shell.py` updates the shared navigation and footer between explicit HTML markers without reformatting unrelated markup.
+- `js/app.js` contains shared interaction behavior and the accessible tab controller.
+- `js/content.js` renders JSON-backed sections, validates URLs, and loads the offline fallback only for `file://` previews.
+- `data/*.json` are the authoritative sources for data-driven content.
+- `data/site-data.js` is generated and must not be edited manually.
+- Research content is maintained directly in `research/research.html` because it uses a richer page-specific structure.
+- `scripts/project.py` contains shared build constants, including the release version.
 
-## Updating content
+## Content updates
 
-1. Edit the relevant JSON file in `data/`.
+1. Edit the relevant file in `data/`.
 2. Run `python3 scripts/build-site-data.py`.
-3. Run `python3 scripts/build-shell.py` only after changing the shared navigation or footer templates in that script.
+3. Run `python3 scripts/build-shell.py` only after changing the shared navigation or footer templates.
 
-## Local preview
+## Preview
 
-For normal HTTP behavior, run a local static server from the project root:
+Run a local static server from the project root:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000/`.
+Then open `http://localhost:8000/`. Direct `file://` previews remain supported through the generated offline bundle, but HTTP preview is preferred.
 
-Opening pages directly with `file://` is supported through the generated `data/site-data.js` fallback, but HTTP preview is preferred.
+## Quality checks
 
-## Quality conventions
-
-- One shared CSS file and one canonical definition per component.
-- No runtime-generated navigation or footer.
-- Buttons, not anchors, are used for in-page tab controls.
-- Custom tab controls support Arrow keys, Home, End, focus management, and synchronized ARIA/hidden states.
-- Dynamic text is escaped.
-- Dynamic URLs are restricted to HTTP(S), `mailto:`, `tel:`, fragments, and relative paths.
-- JSON files are the sole content source; the offline bundle is generated from them.
-
-## Accessibility and quality checks
-
-- Every page includes a skip link and one `<main id="main-content">` landmark.
-- Heading levels are audited to prevent semantic jumps.
-- The custom icon audit verifies that every used `mdi-*` class has an SVG mapping.
-- Invalid content URLs render as non-interactive cards instead of `href="#"` links.
-
-Run the complete project audit with:
+Run the complete checks with:
 
 ```bash
 python3 scripts/audit.py
 node scripts/test-content.js
 ```
 
-Create a clean distribution archive with:
+The audit covers HTML landmarks and headings, local assets, cache-version consistency, JSON/fallback parity, CSS variables, JavaScript and Python syntax, icon coverage, typography rules, and release-package hygiene.
+
+## Release workflow
+
+Update `RELEASE_VERSION` in `scripts/project.py`, then synchronize references with:
+
+```bash
+python3 scripts/set-release-version.py
+```
+
+Create a validated, reproducible archive with:
 
 ```bash
 python3 scripts/package.py
 ```
 
-## Typography
+Packaging regenerates derived files, rebuilds the shared shell, runs all checks, excludes local/generated cache files, and writes `argsbase-clean-release.zip` next to the project directory.
 
-The site uses Adobe Fonts through the project kit `xdp1cxp`. The canonical interface family is **Forma DJR Micro**, using only the licensed 400 and 700 weights (plus their italics). Typography sizes, line heights, and tracking are controlled centrally in `css/site.css`; page-specific font-family overrides should not be added.
+## Design and accessibility conventions
 
-
-## Visual system
-
-- Forma DJR Micro is used for body copy, headings, and interface text for consistent readability.
-- The ArgsBase wordmark uses Kobenhavn CS throughout, with light letterforms and subtly stronger A and B initials.
-- The interface uses one green accent, a neutral surface scale, and exactly two elevation levels.
-- Coloured surfaces are separated by spacing and tone rather than redundant borders or nested panels.
-- Profile pages use a compact hero, a labelled support grid, and simplified content cards for easier scanning.
-
-
-## Final minor refinements
-
-- Refined the ArgsBase wordmark with lighter, slightly extended lettering and stronger A and B initials.
-- Removed visible borders from Research theme accordions while preserving focus and interaction states.
-- Added explicit layout rules for Khalid profile accordion summaries to prevent text and icon overlap.
+- The existing visual design is controlled centrally in `css/site.css`.
+- Adobe Fonts kit `xdp1cxp` supplies Forma DJR Micro and the brand typeface.
+- The interface uses one green accent, neutral surfaces, and two elevation levels.
+- Every page includes a skip link and one `<main id="main-content">` landmark.
+- Custom tab controls synchronize ARIA, focus, keyboard navigation, and hidden panel state.
+- Dynamic text is escaped and dynamic URLs are restricted to approved schemes or safe relative paths.
+- Navigation and footer are statically rendered into every page.
