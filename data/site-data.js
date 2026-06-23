@@ -1,5 +1,19 @@
 /* Generated from data/*.json. Do not edit manually. */
 window.LTS_DATA = {
+  "blog": [
+    {
+      "author": "ArgsBase Lab",
+      "date": "2026",
+      "status": "Inviting posts",
+      "summary": "This page will host short posts by group members about new papers, tools, datasets, opinions, and research questions in reasoning-centered language technology.",
+      "title": "A space for research notes from ArgsBase Lab",
+      "topics": [
+        "Human-AI reasoning",
+        "Argumentation",
+        "Critical thinking"
+      ]
+    }
+  ],
   "members": {
     "externalCollaborators": [
       {

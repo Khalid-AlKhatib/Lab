@@ -3,4 +3,4 @@
 from __future__ import annotations
 
 RELEASE_VERSION = "20260620-5"
-DATA_KEYS = ("members", "news", "positions", "publications", "teaching")
+DATA_KEYS = ("blog", "members", "news", "positions", "publications", "teaching")

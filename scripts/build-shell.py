@@ -16,6 +16,7 @@ NAV_ITEMS = [
     ("research", "Research", "research/research.html"),
     ("members", "Members", "members/members.html"),
     ("publications", "Publications", "publications/publications.html"),
+    ("blog", "Blog", "blog/blog.html"),
     ("teaching", "Teaching", "teaching/teaching.html"),
 ]
 NAV_RE = re.compile(r"<!-- shared-nav:start -->.*?<!-- shared-nav:end -->", re.DOTALL)
@@ -48,6 +49,8 @@ def active_for(html: str) -> str:
         return "members"
     if "publications-page-body" in classes:
         return "publications"
+    if "blog-page-body" in classes:
+        return "blog"
     if "teaching-page-body" in classes:
         return "teaching"
     return ""

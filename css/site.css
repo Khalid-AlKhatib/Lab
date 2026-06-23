@@ -2639,3 +2639,135 @@ p {
     height: 32px;
   }
 }
+
+/* Blog page */
+.blog-page {
+  padding-top: var(--space-section-fluid);
+}
+
+.blog-header {
+  margin-bottom: var(--space-7);
+}
+
+.blog-eyebrow,
+.blog-card-kicker {
+  margin: 0 0 var(--space-3);
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: 750;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+  width: min(var(--container), 100%);
+  margin-inline: auto;
+}
+
+.blog-sidebar,
+.blog-card {
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-soft);
+}
+
+.blog-sidebar {
+  padding: clamp(1.25rem, 2.4vw, 1.85rem);
+}
+
+.blog-sidebar h2 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-md);
+  font-weight: 760;
+}
+
+.blog-sidebar ul,
+.blog-topic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-sidebar li {
+  color: var(--color-muted);
+  font-size: var(--text-base);
+  line-height: 1.55;
+}
+
+.blog-sidebar li + li {
+  margin-top: var(--space-3);
+}
+
+.blog-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.blog-card {
+  padding: clamp(1.35rem, 2.8vw, 2.2rem);
+}
+
+.blog-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-bottom: 0.85rem;
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.blog-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+  font-weight: 780;
+  line-height: 1.18;
+}
+
+.blog-card h2 a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+  text-underline-offset: 0.16em;
+}
+
+.blog-card-byline {
+  margin-bottom: var(--space-4);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: 650;
+}
+
+.blog-card p:not(.blog-card-byline):not(.blog-card-kicker) {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+.blog-topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: var(--space-5);
+}
+
+.blog-topic-list li {
+  padding: 0.42rem 0.72rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  font-weight: 650;
+}
+
+@media (max-width: 767.98px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+}

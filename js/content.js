@@ -193,6 +193,64 @@
     if (items.length) list.innerHTML = items.map(renderNewsItem).join("");
   }
 
+  function renderBlog(posts) {
+    var root = document.getElementById("blog-list");
+    if (!root || !Array.isArray(posts)) return;
+
+    if (!posts.length) {
+      root.innerHTML =
+        '<article class="blog-card blog-card-empty"><p class="blog-card-kicker">Coming soon</p><h2>Lab members will share notes here</h2><p>Posts can introduce new papers, explain design choices behind tools, reflect on datasets, or discuss research questions that are still taking shape.</p></article>';
+      return;
+    }
+
+    root.innerHTML = posts
+      .map(function (post) {
+        var topics =
+          Array.isArray(post.topics) && post.topics.length
+            ? '<ul class="blog-topic-list">' +
+              post.topics
+                .map(function (topic) {
+                  return "<li>" + escapeHtml(topic) + "</li>";
+                })
+                .join("") +
+              "</ul>"
+            : "";
+        var attrs = linkAttributes(post.url);
+        var title = attrs
+          ? '<a href="' +
+            escapeAttr(attrs.href) +
+            '" target="' +
+            attrs.target +
+            '"' +
+            (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
+            ">" +
+            escapeHtml(post.title || "") +
+            "</a>"
+          : escapeHtml(post.title || "");
+
+        return (
+          '<article class="blog-card">' +
+          '<div class="blog-card-meta"><span>' +
+          escapeHtml(post.status || "Post") +
+          "</span><span>" +
+          escapeHtml(post.date || "") +
+          "</span></div>" +
+          "<h2>" +
+          title +
+          "</h2>" +
+          '<p class="blog-card-byline">' +
+          escapeHtml(post.author || "ArgsBase Lab") +
+          "</p>" +
+          "<p>" +
+          escapeHtml(post.summary || "") +
+          "</p>" +
+          topics +
+          "</article>"
+        );
+      })
+      .join("");
+  }
+
   function renderPositions(positions) {
     var root = $(".open-positions ul.list-unstyled");
     if (!root || !Array.isArray(positions)) return;
@@ -826,6 +884,10 @@
       loadData("publications.json", "publications")
         .then(renderPublicationsPage)
         .catch(function (error) { reportLoadError("publications", error); });
+    if ($("#blog-list"))
+      loadData("blog.json", "blog")
+        .then(renderBlog)
+        .catch(function (error) { reportLoadError("blog", error); });
   }
 
   if (document.readyState === "loading") {
