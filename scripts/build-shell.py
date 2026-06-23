@@ -16,9 +16,10 @@ NAV_ITEMS = [
     ("research", "Research", "research/research.html"),
     ("members", "Members", "members/members.html"),
     ("publications", "Publications", "publications/publications.html"),
-    ("blog", "Blog", "blog/blog.html"),
     ("teaching", "Teaching", "teaching/teaching.html"),
+    ("blog", "Blog", "blog/blog.html"),
 ]
+HIDDEN_NAV_KEYS = {"blog"}
 NAV_RE = re.compile(r"<!-- shared-nav:start -->.*?<!-- shared-nav:end -->", re.DOTALL)
 FOOTER_RE = re.compile(r"<!-- shared-footer:start -->.*?<!-- shared-footer:end -->", re.DOTALL)
 BODY_RE = re.compile(r"<body\b([^>]*)>", re.IGNORECASE)
@@ -60,6 +61,7 @@ def nav_html(prefix: str, active: str) -> str:
     links = "\n".join(
         f'          <li class="nav-item"><a class="nav-link{" active" if key == active else ""}" href="{prefix}{path}">{label}</a></li>'
         for key, label, path in NAV_ITEMS
+        if key not in HIDDEN_NAV_KEYS
     )
     return f'''<!-- shared-nav:start -->
 <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
@@ -84,7 +86,8 @@ def nav_html(prefix: str, active: str) -> str:
 def footer_html(prefix: str) -> str:
     links = "\n".join(
         f'          <li><a href="{prefix}{path}">{label}</a></li>'
-        for _, label, path in NAV_ITEMS
+        for key, label, path in NAV_ITEMS
+        if key not in HIDDEN_NAV_KEYS
     )
     return f'''<!-- shared-footer:start -->
 <footer class="site-footer" id="contact">
