@@ -12,12 +12,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = [ROOT / "index.html", *sorted(ROOT.glob("*/*.html"))]
 NAV_ITEMS = [
-    ("home", "Home", "index.html"),
-    ("research", "Research", "research/research.html"),
-    ("members", "Members", "members/members.html"),
-    ("publications", "Publications", "publications/publications.html"),
-    ("teaching", "Teaching", "teaching/teaching.html"),
-    ("blog", "Blog", "blog/blog.html"),
+    ("home", "Home", "/"),
+    ("research", "Research", "/research/"),
+    ("members", "Members", "/members/"),
+    ("publications", "Publications", "/publications/"),
+    ("teaching", "Teaching", "/teaching/"),
+    ("blog", "Blog", "/blog/blog.html"),
 ]
 HIDDEN_NAV_KEYS = {"blog"}
 NAV_RE = re.compile(r"<!-- shared-nav:start -->.*?<!-- shared-nav:end -->", re.DOTALL)
@@ -27,6 +27,10 @@ BODY_RE = re.compile(r"<body\b([^>]*)>", re.IGNORECASE)
 
 def prefix_for(page: Path) -> str:
     return "" if page.parent == ROOT else "../"
+
+
+def href_for(prefix: str, path: str) -> str:
+    return path if path.startswith("/") else prefix + path
 
 
 def body_attribute(html: str, name: str) -> str:
@@ -59,14 +63,14 @@ def active_for(html: str) -> str:
 
 def nav_html(prefix: str, active: str) -> str:
     links = "\n".join(
-        f'          <li class="nav-item"><a class="nav-link{" active" if key == active else ""}" href="{prefix}{path}">{label}</a></li>'
+        f'          <li class="nav-item"><a class="nav-link{" active" if key == active else ""}" href="{href_for(prefix, path)}">{label}</a></li>'
         for key, label, path in NAV_ITEMS
         if key not in HIDDEN_NAV_KEYS
     )
     return f'''<!-- shared-nav:start -->
 <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
   <div class="container-fluid custom-container">
-    <a aria-label="ArgsBase Lab homepage" class="navbar-brand logo brand-lockup" href="{prefix}index.html">
+    <a aria-label="ArgsBase Lab homepage" class="navbar-brand logo brand-lockup" href="/">
       <img alt="" class="brand-mark-img" height="44" src="{prefix}images/optimized/logo.png" width="44"/>
       <span aria-label="ArgsBase" class="brand-name-text"><span class="brand-name-part brand-name-part--args"><span class="brand-name-initial">A</span><span class="brand-name-rest">rgs</span></span><span class="brand-name-part brand-name-part--base"><span class="brand-name-initial">B</span><span class="brand-name-rest">ase</span></span></span>
     </a>
@@ -85,7 +89,7 @@ def nav_html(prefix: str, active: str) -> str:
 
 def footer_html(prefix: str) -> str:
     links = "\n".join(
-        f'          <li><a href="{prefix}{path}">{label}</a></li>'
+        f'          <li><a href="{href_for(prefix, path)}">{label}</a></li>'
         for key, label, path in NAV_ITEMS
         if key not in HIDDEN_NAV_KEYS
     )
@@ -94,7 +98,7 @@ def footer_html(prefix: str) -> str:
   <div class="container">
     <div class="site-footer-grid">
       <div class="site-footer-brand">
-        <a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="{prefix}index.html">
+        <a aria-label="ArgsBase Lab homepage" class="logo-line footer-brand-lockup" href="/">
           <img alt="" class="brand-mark-img" height="36" src="{prefix}images/optimized/logo.png" width="36"/>
           <span aria-label="ArgsBase" class="brand-name-text"><span class="brand-name-part brand-name-part--args"><span class="brand-name-initial">A</span><span class="brand-name-rest">rgs</span></span><span class="brand-name-part brand-name-part--base"><span class="brand-name-initial">B</span><span class="brand-name-rest">ase</span></span></span>
         </a>
@@ -150,7 +154,7 @@ def render_page(page: Path) -> bool:
     prefix = prefix_for(page)
     html = update_body_base_path(original, prefix)
     if not NAV_RE.search(html) or not FOOTER_RE.search(html):
-        raise RuntimeError(f"Missing shared shell markers in {page.relative_to(ROOT)}")
+        return False
     html = NAV_RE.sub(nav_html(prefix, active_for(html)), html, count=1)
     html = FOOTER_RE.sub(footer_html(prefix), html, count=1)
     if html == original:

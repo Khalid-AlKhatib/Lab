@@ -17,7 +17,7 @@ A static, responsive website with a generated shared shell and JSON-backed conte
 - `js/content.js` renders JSON-backed sections, validates URLs, and loads the offline fallback only for `file://` previews.
 - `data/*.json` are the authoritative sources for data-driven content.
 - `data/site-data.js` is generated and must not be edited manually.
-- Research content is maintained directly in `research/research.html` because it uses a richer page-specific structure.
+- Research content is maintained directly in `research/index.html` because it uses a richer page-specific structure.
 - `scripts/project.py` contains shared build constants, including the release version.
 
 ## Content updates

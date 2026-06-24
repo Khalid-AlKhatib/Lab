@@ -104,8 +104,8 @@ def audit_html(errors: list[str]) -> None:
                 errors.append(f"{page.relative_to(ROOT)}: inconsistent cache version for {asset}")
         if "js/content.js" in html and f"js/content.js?v={RELEASE_VERSION}" not in html:
             errors.append(f"{page.relative_to(ROOT)}: inconsistent cache version for content.js")
-        if page == ROOT / "research/research.html" and "js/content.js" in html:
-            errors.append("research/research.html: static Research page must not load content.js")
+        if page == ROOT / "research/index.html" and "js/content.js" in html:
+            errors.append("research/index.html: static Research page must not load content.js")
 
 
 def audit_json(errors: list[str]) -> None:
@@ -226,7 +226,7 @@ def audit_typography(errors: list[str]) -> None:
         if token not in css:
             errors.append(f"Missing canonical typography rule: {token}")
     if (ROOT / "data" / "research.json").exists():
-        errors.append("data/research.json: Research content must have a single source in research/research.html")
+        errors.append("data/research.json: Research content must have a single source in research/index.html")
     if "research-theme-figure" in css:
         errors.append("Obsolete Research illustration styles remain in site.css")
 
