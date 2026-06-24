@@ -1541,7 +1541,7 @@ window.LTS_DATA = {
         "url": "https://ocasys.rug.nl/current/catalog/course/LIX018P05"
       },
       {
-        "desc": "A 5-ECTS master's course in the Faculty of Arts focused on data analysis in Semester 2a.",
+        "desc": "Introduces practical data analysis workflows, from preparing and exploring datasets to applying statistical methods and communicating results clearly.",
         "icon": "mdi mdi-chart-line",
         "iconColor": "text-success",
         "title": "Analysing Data",

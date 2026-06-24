@@ -736,6 +736,8 @@
   function renderPublicationsPage(publications) {
     var listRoot = $("#publications-list");
     var filterRoot = $("#publication-year-filters");
+    var searchInput = $("#publication-search-input");
+    var searchStatus = $("#publication-search-status");
     if (!listRoot || !filterRoot || !Array.isArray(publications)) return;
 
     var years = publications
@@ -761,24 +763,64 @@
     )
       scopes.push({ label: "Previous years", value: "previous" });
 
-    var state = { scope: "all" };
+    var state = { scope: "all", query: "" };
+
+    function publicationSearchText(item) {
+      var linkText = Array.isArray(item.links)
+        ? item.links
+            .map(function (link) {
+              return [link.label, link.url].join(" ");
+            })
+            .join(" ")
+        : "";
+      return [
+        item.title,
+        item.authors,
+        item.venue,
+        item.month,
+        item.type,
+        item.theme,
+        item.year,
+        linkText
+      ]
+        .join(" ")
+        .toLowerCase();
+    }
 
     function filteredData() {
-      if (state.scope === "all") return publications.slice();
-      if (state.scope === "previous")
-        return publications.filter(function (item) {
+      var scoped;
+      if (state.scope === "all") scoped = publications.slice();
+      else if (state.scope === "previous")
+        scoped = publications.filter(function (item) {
           return item.year < 2022;
         });
-      return publications.filter(function (item) {
-        return String(item.year) === state.scope;
+      else
+        scoped = publications.filter(function (item) {
+          return String(item.year) === state.scope;
+        });
+
+      if (!state.query) return scoped;
+      var terms = state.query.toLowerCase().split(/\s+/).filter(Boolean);
+      return scoped.filter(function (item) {
+        var haystack = publicationSearchText(item);
+        return terms.every(function (term) {
+          return haystack.indexOf(term) !== -1;
+        });
       });
+    }
+
+    function updateSearchStatus(count) {
+      if (!searchStatus) return;
+      var suffix = count === 1 ? " publication" : " publications";
+      searchStatus.textContent = "Showing " + count + suffix + ".";
     }
 
     function renderList() {
       var items = filteredData();
+      updateSearchStatus(items.length);
       if (!items.length) {
         listRoot.innerHTML =
-          '<div class="publication-empty-state">No publications match the current filter.</div>';
+          '<div class="publication-empty-state">No publications match the current search or filter.</div>';
         return;
       }
 
@@ -840,6 +882,13 @@
       });
       renderList();
     });
+
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        state.query = searchInput.value.trim();
+        renderList();
+      });
+    }
 
     renderList();
   }

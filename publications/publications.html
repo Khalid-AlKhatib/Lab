@@ -72,7 +72,11 @@
               year, while earlier work is grouped under Previous years.
             </p>
 </header>
-<div aria-label="Publication filters">
+<div aria-label="Publication filters" class="publication-filter-panel">
+<form class="publication-search" id="publication-search-form" role="search">
+<div class="publication-search__meta"><label class="publication-search__label" for="publication-search-input">Search publications</label><p aria-live="polite" class="publication-search__status" id="publication-search-status"></p></div>
+<input autocomplete="off" class="publication-search__input" id="publication-search-input" placeholder="Search by title, author, venue, keyword, or year" type="search"/>
+</form>
 <div aria-label="Filter publications by year" class="nav nav-pills year-filter" id="publication-year-filters" role="group"></div>
 </div>
 <div class="publication-list-wrap publication-list-wrap-local">
