@@ -35,7 +35,7 @@
 
     offlineDataPromise = new Promise(function (resolve, reject) {
       var script = document.createElement("script");
-      script.src = dataUrl("site-data.js") + "?v=20260620-5";
+      script.src = dataUrl("site-data.js") + "?v=20261106-1";
       script.onload = resolve;
       script.onerror = function () {
         reject(new Error("Failed to load offline data bundle"));
@@ -108,7 +108,7 @@
       var hasFallback = typeof fallback !== "undefined";
       if (window.location.protocol === "file:" && hasFallback) return fallback;
 
-      return fetchJson(dataUrl(file)).catch(function (error) {
+      return fetchJson(dataUrl(file) + "?v=20261106-1").catch(function (error) {
         if (hasFallback) return fallback;
         throw error;
       });

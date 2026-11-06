@@ -172,6 +172,9 @@ def audit_javascript(errors: list[str]) -> None:
     expected_offline_version = f'dataUrl("site-data.js") + "?v={RELEASE_VERSION}"'
     if expected_offline_version not in content:
         errors.append("js/content.js: offline fallback cache version is inconsistent")
+    expected_data_version = f'fetchJson(dataUrl(file) + "?v={RELEASE_VERSION}")'
+    if expected_data_version not in content:
+        errors.append("js/content.js: JSON data cache version is inconsistent")
     if "raw.indexOf(\"\\\\\")" not in content:
         errors.append("js/content.js: relative URL validation must reject backslashes")
 

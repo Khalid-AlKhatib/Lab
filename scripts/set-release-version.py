@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HTML_FILES = [ROOT / "index.html", *sorted(ROOT.glob("*/*.html"))]
 ASSET_PATTERN = re.compile(r"((?:css/site\.css|js/(?:icons|app|content)\.js)\?v=)[^\"']+")
 OFFLINE_PATTERN = re.compile(r'(dataUrl\("site-data\.js"\) \+ "\?v=)[^\"]+(\")')
+DATA_PATTERN = re.compile(r'(fetchJson\(dataUrl\(file\) \+ "\?v=)[^\"]+("\))')
 
 
 def update(path: Path, pattern: re.Pattern[str], replacement) -> bool:
@@ -31,7 +32,11 @@ def main() -> int:
         if update(path, ASSET_PATTERN, lambda match: match.group(1) + RELEASE_VERSION):
             changed.append(path.relative_to(ROOT))
     content_path = ROOT / "js/content.js"
-    if update(content_path, OFFLINE_PATTERN, lambda match: match.group(1) + RELEASE_VERSION + match.group(2)):
+    content_changed = [
+        update(content_path, OFFLINE_PATTERN, lambda match: match.group(1) + RELEASE_VERSION + match.group(2)),
+        update(content_path, DATA_PATTERN, lambda match: match.group(1) + RELEASE_VERSION + match.group(2)),
+    ]
+    if any(content_changed):
         changed.append(content_path.relative_to(ROOT))
     print("Release version", RELEASE_VERSION, "synchronized; changed", len(changed), "file(s).")
     return 0
