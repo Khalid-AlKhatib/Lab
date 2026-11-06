@@ -68,6 +68,16 @@ window.LTS_DATA = {
         "room": "0208"
       },
       {
+        "image": "../images/optimized/qing-wang-monogram.svg",
+        "interests": [
+          "Science Fiction and AI",
+          "Reader-Response Analysis",
+          "AI Evaluation"
+        ],
+        "name": "Qing Wang",
+        "profileUrl": "../members/qing-wang.html"
+      },
+      {
         "address": "Oude Kijk in 't Jatstraat 26, Groningen",
         "badgeClass": "student",
         "building": "1313",

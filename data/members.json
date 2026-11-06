@@ -33,6 +33,16 @@
       "profileUrl": "../members/nabhani.html"
     },
     {
+      "name": "Qing Wang",
+      "image": "../images/optimized/qing-wang-monogram.svg",
+      "interests": [
+        "Science Fiction and AI",
+        "Reader-Response Analysis",
+        "AI Evaluation"
+      ],
+      "profileUrl": "../members/qing-wang.html"
+    },
+    {
       "name": "Frieso Turkstra",
       "image": "../images/optimized/anon-male-thumb.jpg",
       "interests": [
