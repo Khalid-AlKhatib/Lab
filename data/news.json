@@ -48,10 +48,28 @@
   ],
   "2026": [
     {
-      "date": "2026",
-      "title": "DALEEL 2026 shared task on cross-genre Arabic argument mining",
-      "desc": "ArgsBase Lab will organise the DALEEL 2026 shared task in collaboration with QatarDebate. The task focuses on cross-genre Arabic argument mining, with more details available on the official shared-task page.",
-      "url": "https://qatardebate.org/programs/academic-programs/daleel2026-shared-task/"
+      "date": "October 2026",
+      "title": "Daleel 2026 at ArabicNLP / EMNLP",
+      "desc": "We co-organised the Daleel shared task with QatarDebate. Twelve teams participated in Arabic argument mining on editorials and debates, and the overview paper is now published.",
+      "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161/"
+    },
+    {
+      "date": "October 2026",
+      "title": "Qing Wang joins the group",
+      "desc": "Qing Wang joined as a PhD researcher. Her project studies how readers interpret AI in science fiction and how these perspectives can inform AI evaluation.",
+      "url": "https://lab.argsbase.net/members/qing-wang.html"
+    },
+    {
+      "date": "March 2026",
+      "title": "ArgsBase demo at EACL 2026",
+      "desc": "Our ArgsBase system demonstration paper appeared at EACL 2026. It describes a multi-agent interface for structured human–AI deliberation.",
+      "url": "https://aclanthology.org/2026.eacl-demo.39/"
+    },
+    {
+      "date": "February 2026",
+      "title": "ARGUS preprint on narratives and persuasion",
+      "desc": "Sara Nabhani and collaborators released ARGUS, a study of how narrative features relate to persuasion in online arguments.",
+      "url": "https://arxiv.org/abs/2602.24109"
     },
     {
       "date": "2026",

@@ -1,11 +1,18 @@
 {
   "Current": [
     {
-      "title": "Introduction to Programming I",
-      "url": "https://ocasys.rug.nl/current/catalog/course/LIX021P05",
+      "title": "Programming",
+      "url": "https://ocasys.rug.nl/current/catalog/course/LIX028P10",
       "icon": "mdi mdi-language-python",
       "iconColor": "text-success",
-      "desc": "A Python-based programming course that introduces problem solving, control flow, functions, and core computational thinking."
+      "desc": "Introduces programming and problem solving with Python, including data processing, algorithms, object-oriented programming, and an integrated project."
+    },
+    {
+      "title": "Web Development",
+      "url": "https://ocasys.rug.nl/current/catalog/course/LIX033P10",
+      "icon": "mdi mdi-web",
+      "iconColor": "text-danger",
+      "desc": "Covers HTML, CSS, JavaScript, usability, and back-end basics, with a project to build an interactive website."
     },
     {
       "title": "Web Programming",
@@ -13,13 +20,6 @@
       "icon": "mdi mdi-web",
       "iconColor": "text-danger",
       "desc": "Focuses on building interactive websites and web-based applications, combining front-end structure with dynamic and database-backed components."
-    },
-    {
-      "title": "Analysing Data",
-      "url": "https://ocasys.rug.nl/current/catalog/course/LHU001M05",
-      "icon": "mdi mdi-chart-line",
-      "iconColor": "text-success",
-      "desc": "Introduces practical data analysis workflows, from preparing and exploring datasets to applying statistical methods and communicating results clearly."
     },
     {
       "title": "Project Text Analysis",
@@ -37,13 +37,50 @@
     },
     {
       "title": "Information Science BA Thesis & Research Seminar",
-      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX999B10",
+      "url": "https://ocasys.rug.nl/current/catalog/course/LIX999B10",
       "icon": "mdi mdi-school-outline",
       "iconColor": "text-success",
       "desc": "Bachelor supervision and research seminar work in which students define, conduct, and report on an individual project in Information Science."
     }
   ],
-  "2024": [
+  "2025-2026": [
+    {
+      "title": "Information Science BA Thesis & Research Seminar",
+      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX999B10",
+      "icon": "mdi mdi-school-outline",
+      "iconColor": "text-success",
+      "desc": "Bachelor supervision and a research seminar in which students plan, conduct, and report on an Information Science project."
+    },
+    {
+      "title": "Language Technology Project",
+      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX025M05",
+      "icon": "mdi mdi-chat-processing-outline",
+      "iconColor": "text-purple",
+      "desc": "A project-based NLP course in which students develop and evaluate a solution to a language technology problem."
+    },
+    {
+      "title": "Introduction to Programming I",
+      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX021P05",
+      "icon": "mdi mdi-language-python",
+      "iconColor": "text-success",
+      "desc": "Introduces programming in Python, problem solving, control flow, functions, and computational thinking."
+    },
+    {
+      "title": "Web Programming",
+      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX018P05",
+      "icon": "mdi mdi-web",
+      "iconColor": "text-danger",
+      "desc": "Developing interactive websites and web applications, from front-end design to dynamic back-end components."
+    },
+    {
+      "title": "Project Text Analysis",
+      "url": "https://ocasys.rug.nl/2025-2026/catalog/course/LIX017P05",
+      "icon": "mdi mdi-text-box-search-outline",
+      "iconColor": "text-danger",
+      "desc": "Practical text analysis with linguistic tools, annotation, and exploration of text collections."
+    }
+  ],
+  "2024-2025": [
     {
       "title": "Introduction to Programming I",
       "url": "https://ocasys.rug.nl/2024-2025/catalog/course/LIX021P05",
@@ -80,43 +117,87 @@
       "desc": "Bachelor supervision and research seminar work in which students define, conduct, and report on an individual project in Information Science."
     }
   ],
-  "2023": [
+  "2023-2024": [
+    {
+      "title": "Information Science BA Thesis & Research Seminar",
+      "url": "https://ocasys.rug.nl/2023-2024/catalog/course/LIX999B10",
+      "icon": "mdi mdi-school-outline",
+      "iconColor": "text-success",
+      "desc": "Bachelor supervision and research seminar work on individual Information Science projects."
+    },
     {
       "title": "Language Technology Project",
-      "url": "https://ocasys.rug.nl/current/catalog/course/LIX025M05",
+      "url": "https://ocasys.rug.nl/2023-2024/catalog/course/LIX025M05",
       "icon": "mdi mdi-chat-processing-outline",
       "iconColor": "text-purple",
       "desc": "A project-based advanced NLP course in which students develop solutions for a concrete language technology challenge."
     },
     {
+      "title": "Introduction to Programming II",
+      "url": "https://ocasys.rug.nl/2023-2024/catalog/course/LIX022P05",
+      "icon": "mdi mdi-language-python",
+      "iconColor": "text-success",
+      "desc": "Builds on introductory Python programming with more advanced problem solving and program design."
+    },
+    {
+      "title": "Introduction to Programming I",
+      "url": "https://ocasys.rug.nl/2023-2024/catalog/course/LIX021P05",
+      "icon": "mdi mdi-language-python",
+      "iconColor": "text-success",
+      "desc": "Introduces programming in Python, problem solving, control flow, and functions."
+    },
+    {
       "title": "Project Text Analysis",
-      "url": "https://ocasys.rug.nl/current/catalog/course/LIX017P05",
+      "url": "https://ocasys.rug.nl/2023-2024/catalog/course/LIX017P05",
       "icon": "mdi mdi-text-box-search-outline",
       "iconColor": "text-danger",
       "desc": "Introduces linguistic-level text analysis with spaCy, combining theoretical foundations with practical annotation and exploration of large text collections."
     }
   ],
-  "2022": [
+  "2022-2023": [
+    {
+      "title": "Language Technology Project",
+      "url": "https://ocasys.rug.nl/2022-2023/catalog/course/LIX025M05",
+      "icon": "mdi mdi-chat-processing-outline",
+      "iconColor": "text-purple",
+      "desc": "A project-based advanced NLP course in which students develop solutions for a concrete language technology challenge."
+    },
     {
       "title": "Introduction to Programming I",
-      "url": "https://ocasys.rug.nl/current/catalog/course/LIX021P05",
+      "url": "https://ocasys.rug.nl/2022-2023/catalog/course/LIX021P05",
       "icon": "mdi mdi-language-python",
       "iconColor": "text-success",
-      "desc": "A Python-based programming course that introduces problem solving, control flow, functions, and core computational thinking."
+      "desc": "Introduces programming in Python, problem solving, control flow, and functions."
+    },
+    {
+      "title": "Project Text Analysis",
+      "url": "https://ocasys.rug.nl/2022-2023/catalog/course/LIX017P05",
+      "icon": "mdi mdi-text-box-search-outline",
+      "iconColor": "text-danger",
+      "desc": "Practical text analysis using linguistic tools, annotation, and text collections."
+    },
+    {
+      "title": "Digital Communication",
+      "url": "https://ocasys.rug.nl/2022-2023/catalog/course/LCX009P05",
+      "icon": "mdi mdi-web",
+      "iconColor": "text-danger",
+      "desc": "Explores digital communication, online media, and how technology shapes information exchange."
+    }
+  ],
+  "2021-2022": [
+    {
+      "title": "Information Science BA Thesis & Research Seminar",
+      "url": "https://ocasys.rug.nl/2021-2022/catalog/course/LIX999B10",
+      "icon": "mdi mdi-school-outline",
+      "iconColor": "text-success",
+      "desc": "Bachelor supervision and research seminar work on individual Information Science projects."
     },
     {
       "title": "Language Technology Project",
       "url": "https://ocasys.rug.nl/2021-2022/catalog/course/LIX025M05",
       "icon": "mdi mdi-chat-processing-outline",
       "iconColor": "text-purple",
-      "desc": "A project-based advanced NLP course in which students develop solutions for a concrete language technology challenge."
-    },
-    {
-      "title": "Information Science BA Thesis",
-      "url": "https://ocasys.rug.nl/2021-2022/catalog/course/LIX999B10?legacy=true",
-      "icon": "mdi mdi-memory",
-      "iconColor": "text-success",
-      "desc": "The Bachelors degree programme in Information Science is concluded by a research project of limited scope, in which students are expected to set up, conduct and report on their own research."
+      "desc": "A project-based NLP course in which students work on a language technology challenge."
     }
   ]
 }
