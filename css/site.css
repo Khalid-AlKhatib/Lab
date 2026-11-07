@@ -615,7 +615,7 @@ p {
   justify-content: center;
   gap: 0.45rem;
   border: 0;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-accent);
   font-family: var(--font-display);
@@ -1414,7 +1414,7 @@ p {
   width: fit-content;
   max-width: 100%;
   min-height: 32px;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-copy);
   font-size: var(--text-sm);
@@ -2079,7 +2079,7 @@ p {
   display: inline-flex;
   align-items: center;
   padding: 0.45rem 0.8rem;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   background: var(--color-surface-soft);
   color: var(--color-accent);
   font-family: var(--font-display);
@@ -2215,7 +2215,7 @@ p {
 .teaching-year-label {
   flex: 0 0 auto;
   padding: 0.35rem 0.8rem;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   background: var(--color-accent-soft);
   color: var(--color-accent);
   font-size: var(--text-sm);
@@ -3084,7 +3084,7 @@ a.teaching-history-item:hover {
 
 .blog-topic-list li {
   padding: 0.42rem 0.72rem;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-text);
   font-size: var(--text-sm);
