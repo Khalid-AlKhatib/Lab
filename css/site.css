@@ -2172,30 +2172,21 @@ p {
 
 /* Teaching */
 .teaching-page .page-header {
-  width: min(100%, var(--container));
-  padding: 2.25rem 0 1.65rem;
-  margin: 0 auto var(--space-5);
-  text-align: left;
-  border-bottom: 1px solid var(--color-border);
+  width: min(100%, var(--container-narrow));
+  padding: 2.5rem 0 2rem;
+  margin: 0 auto var(--space-4);
+  text-align: center;
 }
 .teaching-page .page-header__title {
-  margin: 0 0 0.55rem;
-  max-width: none;
-  font-size: clamp(2.25rem, 4vw, 3rem);
+  margin: 0 auto var(--space-3);
+  max-width: var(--container-narrow);
+  font-size: var(--text-2xl);
 }
 .teaching-page .page-header__intro {
-  margin: 0;
-  max-width: 68ch;
-  font-size: var(--text-base);
-  line-height: 1.55;
-}
-.teaching-eyebrow {
-  margin: 0 0 0.5rem;
-  color: var(--color-accent);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: var(--container-narrow);
+  font-size: var(--text-md);
+  line-height: 1.6;
 }
 .teaching-overview {
   width: min(100%, var(--container));
@@ -2223,6 +2214,9 @@ p {
 }
 .teaching-year-label {
   flex: 0 0 auto;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
   color: var(--color-accent);
   font-size: var(--text-sm);
   font-weight: 700;
@@ -2235,19 +2229,21 @@ p {
   list-style: none;
 }
 .teaching-course-list {
-  border-top: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
 }
 .teaching-course-row {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.4fr);
-  gap: var(--space-4);
-  align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-soft);
 }
 .teaching-course-primary h3 {
   margin: 0.18rem 0 0;
-  font-size: var(--text-md);
+  font-size: var(--text-lg);
   font-weight: 700;
   line-height: 1.35;
 }
@@ -2255,7 +2251,8 @@ p {
   color: var(--color-accent);
   font-size: var(--text-xs);
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 .teaching-course-title {
   display: inline-flex;
@@ -2273,8 +2270,8 @@ a.teaching-course-title:hover {
 }
 .teaching-course-description {
   margin: 0;
-  color: var(--color-copy);
-  font-size: var(--text-sm);
+  color: var(--color-muted);
+  font-size: var(--text-base);
   line-height: 1.5;
 }
 .teaching-theses,
@@ -2287,9 +2284,9 @@ a.teaching-course-title:hover {
 }
 .teaching-thesis-group,
 .teaching-archive {
-  border: 1px solid var(--color-border);
+  border: 0;
   border-radius: var(--radius-md);
-  background: var(--color-surface);
+  background: var(--color-surface-soft);
   overflow: hidden;
 }
 .teaching-thesis-group summary,
@@ -2348,8 +2345,7 @@ a.teaching-course-title:hover {
   border-bottom: 0;
 }
 .teaching-history {
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
 }
 .teaching-history-list {
   padding: 0.2rem 1.15rem;
@@ -2380,10 +2376,11 @@ a.teaching-history-item:hover {
   font-size: var(--text-sm);
 }
 @media (max-width: 700px) {
-  .teaching-course-row {
+  .teaching-course-list {
     grid-template-columns: 1fr;
-    gap: 0.3rem;
-    padding: 0.85rem 0;
+  }
+  .teaching-course-row {
+    padding: 1rem 1.1rem;
   }
   .teaching-section-heading {
     align-items: center;
