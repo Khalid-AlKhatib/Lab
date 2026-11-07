@@ -34,7 +34,7 @@
 <link href="https://use.typekit.net" rel="preconnect" crossorigin/>
 <link href="https://p.typekit.net" rel="preconnect" crossorigin/>
 <link href="https://use.typekit.net/xdp1cxp.css" rel="stylesheet"/>
-<link href="../css/site.css?v=20261107-2" rel="stylesheet" type="text/css"/>
+<link href="../css/site.css?v=20261107-3" rel="stylesheet" type="text/css"/>
 </head>
 <body class="site-subpage teaching-page-body" data-active-nav="teaching" data-base-path="../">
 <a class="skip-link" href="#main-content">Skip to main content</a><noscript><div class="noscript-notice">JavaScript is required for interactive tabs and data-driven content on this site.</div></noscript>
@@ -63,43 +63,33 @@
 <main id="main-content" tabindex="-1">
 <section class="section teaching-page" id="teaching">
 <div class="container">
-<header class="page-header">
-<h1 class="page-header__title">Teaching</h1>
-<p class="page-header__intro">
-            Our teaching covers programming, web development, text analysis,
-            language technology, and research supervision at the University of
-            Groningen. The list follows the
-            <a href="https://ocasys.rug.nl/2026-2027/staff/khalid.alkhatib">official Ocasys teaching record</a>.
-          </p>
+<header class="page-header teaching-page-header">
+  <p class="teaching-eyebrow">University of Groningen</p>
+  <h1 class="page-header__title">Teaching</h1>
+  <p class="page-header__intro">
+    Courses and thesis supervision in programming, text analysis, and language technology.
+    <a href="https://ocasys.rug.nl/2026-2027/staff/khalid.alkhatib" rel="noopener noreferrer" target="_blank">Official teaching record</a>.
+  </p>
 </header>
 <div class="load-error" data-load-error="teaching" hidden=""></div>
 <div class="teaching-overview">
   <section class="teaching-current" aria-labelledby="teachingCurrentTitle">
     <div class="teaching-section-heading">
-      <h2 id="teachingCurrentTitle">Current Courses &amp; Supervision</h2>
+      <h2 id="teachingCurrentTitle">Courses &amp; Supervision</h2>
       <span class="teaching-year-label">2026–27</span>
     </div>
-    <div class="teaching-panel" id="teachingCurrent">
-      <div class="row g-4 justify-content-center"></div>
-    </div>
+    <ul class="teaching-course-list" id="teachingCurrent"></ul>
   </section>
-    <section class="teaching-theses" id="selected-theses" aria-labelledby="selected-theses-title">
-    <div class="teaching-section-heading">
-      <div>
-        <h2 id="selected-theses-title">Selected Supervised Theses</h2>
-        <p class="teaching-history-intro">A selection of BSc and MSc theses supervised or co-supervised by Khalid Al-Khatib. Links open public university records where available.</p>
-      </div>
+
+  <section class="teaching-theses" id="selected-theses" aria-labelledby="selected-theses-title">
+    <div class="teaching-section-heading teaching-section-heading--stacked">
+      <h2 id="selected-theses-title">Selected Theses</h2>
+      <p>A selection of BSc and MSc theses supervised or co-supervised by Khalid Al-Khatib.</p>
     </div>
-    <div class="teaching-thesis-grid">
-      <details class="kaf-details">
-<summary>
-<div class="kaf-summary-title">
-<span class="kaf-summary-badge"><i class="mdi mdi-school-outline"></i></span><span class="kaf-summary-copy"><strong>Master’s theses</strong><span>Selected MSc theses</span></span>
-</div>
-<i class="mdi mdi-chevron-down kaf-summary-chevron"></i>
-</summary>
-<div class="kaf-details-body">
-<ul class="kaf-simple-list kaf-theses-list">
+    <div class="teaching-thesis-list">
+      <details class="teaching-thesis-group">
+        <summary><span>Master’s Theses</span><small>7 selected</small></summary>
+        <ul class="teaching-thesis-items">
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/37751/" rel="noopener noreferrer" target="_blank">Enhancing Critical Thinking with AI: A Hybrid Intelligence Argumentation Framework for Fallacy Detection</a><span class="kaf-thesis-meta">Roderik Groenwold · 2025 · MSc</span></li>
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/37658/" rel="noopener noreferrer" target="_blank">Agentic AI and its Roles in Corporate Negotiations: Benevolent Tools or Manipulative Actors?</a><span class="kaf-thesis-meta">Xin Ru (Natalie) Voo · 2025 · MSc</span></li>
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/36552/" rel="noopener noreferrer" target="_blank">Analyzing the Fact-Checking Process in Wikipedia Deliberations</a><span class="kaf-thesis-meta">Thijs Brekhof · 2025 · MSc</span></li>
@@ -107,37 +97,27 @@
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/34961/" rel="noopener noreferrer" target="_blank">Assessing the Efficacy of Hybrid Intelligence in Evaluating Argument Quality: A Study in Digital Humanities</a><span class="kaf-thesis-meta">Yaru Cao · 2024 · MSc</span></li>
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/34750/" rel="noopener noreferrer" target="_blank">Human Values and Biases in LLMs: Analyzing Universal Human Values and Biases in Arguments About Controversial Topics</a><span class="kaf-thesis-meta">Vivien ter Hell · 2024 · MSc</span></li>
 <li><a class="kaf-thesis-link" href="https://arts.studenttheses.ub.rug.nl/32234/" rel="noopener noreferrer" target="_blank">Identifying Effective Deliberation Strategies in Wikipedia Talk Pages</a><span class="kaf-thesis-meta">Behrooz Nikandish · 2023 · MSc</span></li>
-</ul>
-</div>
-</details>
-      <details class="kaf-details">
-<summary>
-<div class="kaf-summary-title">
-<span class="kaf-summary-badge"><i class="mdi mdi-book-open-page-variant-outline"></i></span><span class="kaf-summary-copy"><strong>Bachelor’s theses</strong><span>Selected BSc theses</span></span>
-</div>
-<i class="mdi mdi-chevron-down kaf-summary-chevron"></i>
-</summary>
-<div class="kaf-details-body">
-<ul class="kaf-simple-list kaf-theses-list">
+        </ul>
+      </details>
+      <details class="teaching-thesis-group">
+        <summary><span>Bachelor’s Theses</span><small>6 selected</small></summary>
+        <ul class="teaching-thesis-items">
 <li><span class="kaf-thesis-title">Comparing Human and LLM Annotation of Media Frames in the ChangeMyView Dataset</span><span class="kaf-thesis-meta">Anya Kiewit · 2026 · BSc</span></li>
 <li><span class="kaf-thesis-title">Do Frame Shifts Predict Persuasion? A Large-Scale Analysis of Argumentative Framing in r/ChangeMyView</span><span class="kaf-thesis-meta">Floris Bokx · 2026 · BSc</span></li>
 <li><span class="kaf-thesis-title">The Architecture of Agreement: Value-Based Persuasion in r/ChangeMyView</span><span class="kaf-thesis-meta">Jawid Rahimi · 2026 · BSc</span></li>
 <li><span class="kaf-thesis-title">Exploring Narrative Structure Elements in Persuasive Online Discussions Using LLMs</span><span class="kaf-thesis-meta">Jani de Bruijn · 2025 · BSc</span></li>
 <li><span class="kaf-thesis-title">The Role of Readers’ Perception in Persuasive Communication</span><span class="kaf-thesis-meta">Shaya Bhailal · 2025 · BSc</span></li>
 <li><span class="kaf-thesis-title">To Make a Long Story Short: Element-Based Summarization Using Large (and Small) Language Models</span><span class="kaf-thesis-meta">Maxim van der Maesen de Sombreff · 2024 · BSc</span></li>
-</ul>
-</div>
-</details>
+        </ul>
+      </details>
     </div>
   </section>
-  <section class="teaching-history" aria-labelledby="teachingHistoryTitle">
-    <div class="teaching-section-heading">
-      <div>
-        <h2 id="teachingHistoryTitle">Earlier Courses</h2>
-        <p class="teaching-history-intro">Other courses taught in previous academic years.</p>
-      </div>
-    </div>
-    <ul class="teaching-history-list" id="teachingEarlier"></ul>
+
+  <section class="teaching-history" aria-label="Earlier teaching">
+    <details class="teaching-archive">
+      <summary><span class="teaching-archive-heading">Earlier Courses</span><small>Previous academic years</small></summary>
+      <ul class="teaching-history-list" id="teachingEarlier"></ul>
+    </details>
   </section>
 </div>
 </div>
@@ -191,6 +171,6 @@
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/icons.js?v=20261107-2"></script>
 <script src="../js/app.js?v=20261107-2"></script>
-<script src="../js/content.js?v=20261107-2"></script>
+<script src="../js/content.js?v=20261107-3"></script>
 </body>
 </html>

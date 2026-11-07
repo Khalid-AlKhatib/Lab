@@ -5,42 +5,48 @@
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX028P10",
       "icon": "mdi mdi-language-python",
       "iconColor": "text-success",
-      "desc": "Introduces programming and problem solving with Python, including data processing, algorithms, object-oriented programming, and an integrated project."
+      "desc": "Python, algorithms, and problem solving.",
+      "level": "BSc"
     },
     {
       "title": "Web Development",
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX033P10",
       "icon": "mdi mdi-web",
       "iconColor": "text-danger",
-      "desc": "Covers HTML, CSS, JavaScript, usability, and back-end basics, with a project to build an interactive website."
+      "desc": "HTML, CSS, JavaScript, and interactive web design.",
+      "level": "BSc"
     },
     {
       "title": "Web Programming",
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX018P05",
       "icon": "mdi mdi-web",
       "iconColor": "text-danger",
-      "desc": "Focuses on building interactive websites and web-based applications, combining front-end structure with dynamic and database-backed components."
+      "desc": "Interactive websites and database-backed web applications.",
+      "level": "BSc"
     },
     {
       "title": "Project Text Analysis",
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX017P05",
       "icon": "mdi mdi-text-box-search-outline",
       "iconColor": "text-danger",
-      "desc": "Introduces linguistic-level text analysis with spaCy, combining theoretical foundations with practical annotation and exploration of large text collections."
+      "desc": "Linguistic text analysis and annotation with spaCy.",
+      "level": "BSc"
     },
     {
       "title": "Language Technology Project",
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX025M05",
       "icon": "mdi mdi-chat-processing-outline",
       "iconColor": "text-purple",
-      "desc": "A project-based advanced NLP course in which students develop solutions for a concrete language technology challenge."
+      "desc": "An applied NLP project, from development to evaluation.",
+      "level": "MSc"
     },
     {
       "title": "Information Science BA Thesis & Research Seminar",
       "url": "https://ocasys.rug.nl/current/catalog/course/LIX999B10",
       "icon": "mdi mdi-school-outline",
       "iconColor": "text-success",
-      "desc": "Bachelor supervision and research seminar work in which students define, conduct, and report on an individual project in Information Science."
+      "desc": "Bachelor’s research projects in Information Science.",
+      "level": "Supervision"
     }
   ],
   "2025-2026": [

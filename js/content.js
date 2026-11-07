@@ -35,7 +35,7 @@
 
     offlineDataPromise = new Promise(function (resolve, reject) {
       var script = document.createElement("script");
-      script.src = dataUrl("site-data.js") + "?v=20261107-2";
+      script.src = dataUrl("site-data.js") + "?v=20261107-3";
       script.onload = resolve;
       script.onerror = function () {
         reject(new Error("Failed to load offline data bundle"));
@@ -108,7 +108,7 @@
       var hasFallback = typeof fallback !== "undefined";
       if (window.location.protocol === "file:" && hasFallback) return fallback;
 
-      return fetchJson(dataUrl(file) + "?v=20261107-2").catch(function (error) {
+      return fetchJson(dataUrl(file) + "?v=20261107-3").catch(function (error) {
         if (hasFallback) return fallback;
         throw error;
       });
@@ -558,108 +558,81 @@
     });
   }
 
-  function teachingIconClass(iconColor) {
-    if (iconColor === "text-danger") return "icon-rose";
-    if (iconColor === "text-purple") return "icon-purple";
-    return "icon-emerald";
-  }
-
   function renderTeaching(data) {
-    Object.keys(data || {}).forEach(function (year) {
-      var row = document.querySelector("#teaching" + year + " .row");
-      if (!row) return;
-      var items = Array.isArray(data[year]) ? data[year] : [];
-
-      row.innerHTML = items
-        .map(function (course) {
-          var label = /thesis|supervision/i.test(course.title || "")
-            ? "Supervision"
-            : "Course";
-          var attrs = linkAttributes(course.url);
-          var tag = attrs ? "a" : "article";
-          var linkAttrs = attrs
-            ? ' href="' + escapeAttr(attrs.href) + '"' +
-              (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
-              ' target="' + attrs.target + '"'
-            : "";
-          var action = attrs ? "View course" : "Course information";
-          return (
-            '<div class="col-lg-6 col-md-6 d-flex"><' + tag +
-            ' class="teaching-card d-flex flex-column w-100"' + linkAttrs + '>' +
-            '<div class="teaching-card-top"><div class="teaching-card-icon ' +
-            teachingIconClass(course.iconColor) +
-            '"><i class="' +
-            escapeAttr(course.icon || "mdi mdi-book-outline") +
-            '"></i></div>' +
-            '<div><span class="teaching-card-kicker">' +
-            label +
-            '</span><h3 class="teaching-card-title">' +
-            escapeHtml(course.title || "") +
-            "</h3></div></div>" +
-            '<p class="teaching-card-text">' +
-            escapeHtml(course.desc || "") +
-            "</p>" +
-            '<div class="teaching-card-meta mt-auto"><span>' +
-            escapeHtml(year) +
-            "</span><span>" + action + "</span></div>" +
-            "</" + tag + "></div>"
-          );
-        })
-        .join("");
-    });
-
-    // Keep the full yearly record in JSON, but list recurring courses only once.
-    var archive = document.querySelector("#teachingEarlier");
-    if (!archive) return;
-
-    var activeTitles = new Set(
-      (Array.isArray(data && data.Current) ? data.Current : []).map(function (course) {
-        return String(course.title || "").trim().toLowerCase();
-      }),
-    );
-    var archiveByTitle = new Map();
-    Object.keys(data || {})
-      .filter(function (year) { return year !== "Current"; })
-      .sort()
-      .reverse()
-      .forEach(function (year) {
-        (Array.isArray(data[year]) ? data[year] : []).forEach(function (course) {
-          var title = String(course.title || "").trim();
-          var key = title.toLowerCase();
-          if (!title || activeTitles.has(key)) return;
-          if (!archiveByTitle.has(key)) {
-            archiveByTitle.set(key, { course: course, years: [] });
-          }
-          archiveByTitle.get(key).years.push(year);
-        });
-      });
-
-    archive.innerHTML = Array.from(archiveByTitle.values())
-      .sort(function (a, b) {
-        return b.years[0].localeCompare(a.years[0]) ||
-          String(a.course.title).localeCompare(String(b.course.title));
-      })
-      .map(function (entry) {
-        var attrs = linkAttributes(entry.course.url);
+    var current = document.querySelector("#teachingCurrent");
+    if (current) {
+      var items = Array.isArray(data && data.Current) ? data.Current : [];
+      current.innerHTML = items.map(function (course) {
+        var attrs = linkAttributes(course.url);
         var tag = attrs ? "a" : "span";
         var linkAttrs = attrs
           ? ' href="' + escapeAttr(attrs.href) + '"' +
             (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
             ' target="' + attrs.target + '"'
           : "";
-        var years = entry.years.slice().reverse().map(function (year) {
-          return year.slice(0, 4) + "–" + year.slice(-2);
-        }).join(", ");
-        return (
-          '<li><' + tag + ' class="teaching-history-item"' + linkAttrs + '>' +
-          '<span class="teaching-history-title">' +
-          escapeHtml(entry.course.title || "") + '</span>' +
-          '<span class="teaching-history-years">' +
-          escapeHtml(years) + '</span>' +
-          '</' + tag + '></li>'
-        );
+        var level = course.level ||
+          (/thesis|supervision/i.test(course.title || "") ? "Supervision" : "Course");
+        var heading = '<' + tag + ' class="teaching-course-title"' + linkAttrs + '>' +
+          escapeHtml(course.title || "") +
+          (attrs ? '<i class="mdi mdi-arrow-top-right" aria-hidden="true"></i>' : "") +
+          '</' + tag + '>';
+        return '<li class="teaching-course-row">' +
+          '<div class="teaching-course-primary">' +
+          '<span class="teaching-course-level">' + escapeHtml(level) + '</span>' +
+          '<h3>' + heading + '</h3></div>' +
+          '<p class="teaching-course-description">' + escapeHtml(course.desc || "") + '</p>' +
+          '</li>';
+      }).join("");
+    }
+
+    // Retain the full teaching history in JSON, but show each past course only once.
+    var archive = document.querySelector("#teachingEarlier");
+    if (!archive) return;
+    var activeTitles = new Set(
+      (Array.isArray(data && data.Current) ? data.Current : []).map(function (course) {
+        return String(course.title || "").trim().toLowerCase();
       })
-      .join("");
+    );
+    var archiveByTitle = new Map();
+    Object.keys(data || {}).filter(function (year) {
+      return year !== "Current";
+    }).sort().reverse().forEach(function (year) {
+      (Array.isArray(data[year]) ? data[year] : []).forEach(function (course) {
+        var title = String(course.title || "").trim();
+        var key = title.toLowerCase();
+        if (!title || activeTitles.has(key)) return;
+        if (!archiveByTitle.has(key)) {
+          archiveByTitle.set(key, { course: course, years: [] });
+        }
+        archiveByTitle.get(key).years.push(year);
+      });
+    });
+    archive.innerHTML = Array.from(archiveByTitle.values()).sort(function (a, b) {
+      return b.years[0].localeCompare(a.years[0]) ||
+        String(a.course.title).localeCompare(String(b.course.title));
+    }).map(function (entry) {
+      var attrs = linkAttributes(entry.course.url);
+      var tag = attrs ? "a" : "span";
+      var linkAttrs = attrs
+        ? ' href="' + escapeAttr(attrs.href) + '"' +
+          (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
+          ' target="' + attrs.target + '"'
+        : "";
+      var sorted = entry.years.slice().sort();
+      var consecutive = sorted.every(function (year, index) {
+        return index === 0 ||
+          Number(year.slice(0, 4)) === Number(sorted[index - 1].slice(0, 4)) + 1;
+      });
+      var years = consecutive && sorted.length > 1
+        ? sorted[0].slice(0, 4) + "–" + sorted[sorted.length - 1].slice(-2)
+        : sorted.map(function (year) {
+            return year.slice(0, 4) + "–" + year.slice(-2);
+          }).join(", ");
+      return '<li><' + tag + ' class="teaching-history-item"' + linkAttrs + '>' +
+        '<span class="teaching-history-title">' + escapeHtml(entry.course.title || "") + '</span>' +
+        '<span class="teaching-history-years">' + escapeHtml(years) + '</span>' +
+        '</' + tag + '></li>';
+    }).join("");
   }
 
   function publicationMeta(item) {
