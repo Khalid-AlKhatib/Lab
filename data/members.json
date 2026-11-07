@@ -44,7 +44,7 @@
     },
     {
       "name": "Frieso Turkstra",
-      "image": "../images/optimized/anon-male-thumb.jpg",
+      "image": "../images/optimized/frieso-turkstra-monogram.svg",
       "interests": [
         "Natural Language Processing",
         "Human–AI Deliberation",
@@ -64,7 +64,7 @@
   "externalCollaborators": [
     {
       "name": "Ali Al-Zawqari",
-      "image": "../images/optimized/anon-male-thumb.jpg",
+      "image": "../images/optimized/ali-al-zawqari-monogram.svg",
       "interests": [
         "Argument Mining",
         "Interpretable Machine Learning",

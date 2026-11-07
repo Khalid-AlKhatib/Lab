@@ -1,6 +1,27 @@
 [
   {
     "year": 2026,
+    "type": "Shared-task overview",
+    "title": "Daleel 2026 Shared Task on Arabic Argumentative Discourse Mining",
+    "authors": "Sara Nabhani, Nahla Bassyouni, Ali Al-Zawqari, Mohammad Khader, and Khalid Al-Khatib",
+    "venue": "Proceedings of The Fourth Arabic Natural Language Processing Conference: Shared Tasks",
+    "month": "October 2026",
+    "pages": "1287–1298",
+    "location": "Budapest, Hungary",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2026,
     "type": "Demo paper",
     "title": "ARGSBASE: A Multi-Agent Interface for Structured Human–AI Deliberation",
     "authors": "Frieso Turkstra, Sara Nabhani, and Khalid Al-Khatib",
@@ -17,6 +38,21 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.18653/v1/2026.eacl-demo.39"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "type": "Preprint",
+    "title": "ARGUS: Seeing the Influence of Narrative Features on Persuasion in Argumentative Texts",
+    "authors": "Sara Nabhani, Federico Pianzola, Khalid Al-Khatib, and Malvina Nissim",
+    "venue": "arXiv preprint arXiv:2602.24109",
+    "month": "February 2026",
+    "publisher": "arXiv",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.24109"
       }
     ]
   },
@@ -42,6 +78,27 @@
       {
         "label": "UG portal",
         "url": "https://research.rug.nl/en/publications/9e32e62e-6441-4376-8711-e9c9577f2c56/"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Conference paper",
+    "title": "Transfer or Translate? Argument Mining in Arabic with No Native Annotations",
+    "authors": "Sara Nabhani and Khalid Al-Khatib",
+    "venue": "Proceedings of The Third Arabic Natural Language Processing Conference",
+    "month": "November 2025",
+    "pages": "407–416",
+    "location": "Suzhou, China",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.arabicnlp-main.33/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.arabicnlp-main.33"
       }
     ]
   },
@@ -96,6 +153,27 @@
       {
         "label": "Slides",
         "url": "https://downloads-cf.webis.de/publications/slides/heinrich_2025b.pdf"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "type": "Position paper",
+    "title": "Toward Reasonable Parrots: Why Large Language Models Should Argue with Us by Design",
+    "authors": "Elena Musi, Nadin Kökciyan, Khalid Al-Khatib, Davide Ceolin, Emmanuelle Dietz, Klara Maximiliane Gutekunst, Annette Hautli-Janisz, Cristián Santibáñez, Jodi Schneider, Jonas Scholz, Cor Steging, Jacky Visser, and Henning Wachsmuth",
+    "venue": "Proceedings of the 12th Argument Mining Workshop",
+    "month": "July 2025",
+    "pages": "24–31",
+    "location": "Vienna, Austria",
+    "publisher": "Association for Computational Linguistics",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2025.argmining-1.3/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.18653/v1/2025.argmining-1.3"
       }
     ]
   },

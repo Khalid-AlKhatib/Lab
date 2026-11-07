@@ -345,6 +345,7 @@
       .filter(Boolean)
       .map(escapeHtml)
       .join(" · ");
+    // Public listing cards stay compact; full office details remain on profiles.
     var contact = [
       memberMetaItem(
         "mdi mdi-email",
@@ -352,15 +353,6 @@
         item.email,
         item.email ? "mailto:" + item.email : "",
       ),
-      memberMetaItem(
-        "mdi mdi-phone",
-        "Phone",
-        item.phone,
-        item.phone ? "tel:" + item.phone : "",
-      ),
-      memberMetaItem("mdi mdi-map-marker", "Address", item.address),
-      memberMetaItem("mdi mdi-office-building", "Building", item.building),
-      memberMetaItem("mdi mdi-door", "Room", item.room),
     ]
       .filter(Boolean)
       .join("");

@@ -19,7 +19,7 @@ window.LTS_DATA = {
       {
         "badgeClass": "student",
         "cardLabel": "External collaborator",
-        "image": "../images/optimized/anon-male-thumb.jpg",
+        "image": "../images/optimized/ali-al-zawqari-monogram.svg",
         "interests": [
           "Argument Mining",
           "Interpretable Machine Learning",
@@ -83,7 +83,7 @@ window.LTS_DATA = {
         "building": "1313",
         "cardLabel": "Research Assistant",
         "email": "fturkstra@rug.nl",
-        "image": "../images/optimized/anon-male-thumb.jpg",
+        "image": "../images/optimized/frieso-turkstra-monogram.svg",
         "interests": [
           "Natural Language Processing",
           "Human–AI Deliberation",
@@ -100,17 +100,14 @@ window.LTS_DATA = {
       {
         "date": "2024",
         "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024.",
-        "title": "TL;DR Progress at EACL 2024"
+        "title": "TL;DR Progress at EACL 2024",
+        "url": "https://aclanthology.org/2024.eacl-demo.21/"
       },
       {
         "date": "2024",
-        "desc": "New work appeared on argument effectiveness across ideologies and on argumentation theory-driven prompting for implied misogynistic reasoning.",
-        "title": "EMNLP 2024 publications"
-      },
-      {
-        "date": "2024",
-        "desc": "The group continued work on long-discussion summarization and literature exploration tools linked to Webis and ArgsBase Lab research.",
-        "title": "Summary and discussion analysis"
+        "desc": "Our work on improving arguments across ideological viewpoints appeared in Findings of EMNLP 2024.",
+        "title": "Improving argument effectiveness across ideologies",
+        "url": "https://aclanthology.org/2024.findings-emnlp.265/"
       }
     ],
     "2025": [
@@ -135,12 +132,14 @@ window.LTS_DATA = {
       {
         "date": "2025",
         "desc": "A position paper on why large language models should argue with us by design was nominated for the best paper award at ArgMining 2025.",
-        "title": "Toward Reasonable Parrots"
+        "title": "Toward Reasonable Parrots",
+        "url": "https://aclanthology.org/2025.argmining-1.3/"
       },
       {
         "date": "2025",
-        "desc": "The group contributed new work on culturally-aware Arabic debate platforms, Arabic argument mining, narratives, and critical-question generation.",
-        "title": "Arabic debate and argument mining papers"
+        "desc": "Our study of cross-lingual transfer and translation-based approaches to Arabic argument mining appeared at ArabicNLP 2025.",
+        "title": "Cross-lingual Arabic argument mining",
+        "url": "https://aclanthology.org/2025.arabicnlp-main.33/"
       }
     ],
     "2026": [
@@ -186,6 +185,27 @@ window.LTS_DATA = {
   ],
   "publications": [
     {
+      "authors": "Sara Nabhani, Nahla Bassyouni, Ali Al-Zawqari, Mohammad Khader, and Khalid Al-Khatib",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161/"
+        },
+        {
+          "label": "PDF",
+          "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161.pdf"
+        }
+      ],
+      "location": "Budapest, Hungary",
+      "month": "October 2026",
+      "pages": "1287–1298",
+      "publisher": "Association for Computational Linguistics",
+      "title": "Daleel 2026 Shared Task on Arabic Argumentative Discourse Mining",
+      "type": "Shared-task overview",
+      "venue": "Proceedings of The Fourth Arabic Natural Language Processing Conference: Shared Tasks",
+      "year": 2026
+    },
+    {
       "authors": "Frieso Turkstra, Sara Nabhani, and Khalid Al-Khatib",
       "links": [
         {
@@ -204,6 +224,21 @@ window.LTS_DATA = {
       "title": "ARGSBASE: A Multi-Agent Interface for Structured Human–AI Deliberation",
       "type": "Demo paper",
       "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+      "year": 2026
+    },
+    {
+      "authors": "Sara Nabhani, Federico Pianzola, Khalid Al-Khatib, and Malvina Nissim",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2602.24109"
+        }
+      ],
+      "month": "February 2026",
+      "publisher": "arXiv",
+      "title": "ARGUS: Seeing the Influence of Narrative Features on Persuasion in Argumentative Texts",
+      "type": "Preprint",
+      "venue": "arXiv preprint arXiv:2602.24109",
       "year": 2026
     },
     {
@@ -229,6 +264,27 @@ window.LTS_DATA = {
       "title": "Hybrid Intelligence for Logical Fallacy Detection",
       "type": "Conference paper",
       "venue": "Proceedings of the Fourth Workshop on Bridging Human-Computer Interaction and Natural Language Processing (HCI+NLP)",
+      "year": 2025
+    },
+    {
+      "authors": "Sara Nabhani and Khalid Al-Khatib",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://aclanthology.org/2025.arabicnlp-main.33/"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.18653/v1/2025.arabicnlp-main.33"
+        }
+      ],
+      "location": "Suzhou, China",
+      "month": "November 2025",
+      "pages": "407–416",
+      "publisher": "Association for Computational Linguistics",
+      "title": "Transfer or Translate? Argument Mining in Arabic with No Native Annotations",
+      "type": "Conference paper",
+      "venue": "Proceedings of The Third Arabic Natural Language Processing Conference",
       "year": 2025
     },
     {
@@ -282,6 +338,27 @@ window.LTS_DATA = {
       "publisher": "Association for Computational Linguistics",
       "title": "Multi-Class versus Means-End: Assessing Classification Approaches for Argument Patterns",
       "type": "Conference paper",
+      "venue": "Proceedings of the 12th Argument Mining Workshop",
+      "year": 2025
+    },
+    {
+      "authors": "Elena Musi, Nadin Kökciyan, Khalid Al-Khatib, Davide Ceolin, Emmanuelle Dietz, Klara Maximiliane Gutekunst, Annette Hautli-Janisz, Cristián Santibáñez, Jodi Schneider, Jonas Scholz, Cor Steging, Jacky Visser, and Henning Wachsmuth",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://aclanthology.org/2025.argmining-1.3/"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.18653/v1/2025.argmining-1.3"
+        }
+      ],
+      "location": "Vienna, Austria",
+      "month": "July 2025",
+      "pages": "24–31",
+      "publisher": "Association for Computational Linguistics",
+      "title": "Toward Reasonable Parrots: Why Large Language Models Should Argue with Us by Design",
+      "type": "Position paper",
       "venue": "Proceedings of the 12th Argument Mining Workshop",
       "year": 2025
     },

@@ -3,17 +3,14 @@
     {
       "date": "2024",
       "title": "TL;DR Progress at EACL 2024",
-      "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024."
+      "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024.",
+      "url": "https://aclanthology.org/2024.eacl-demo.21/"
     },
     {
       "date": "2024",
-      "title": "EMNLP 2024 publications",
-      "desc": "New work appeared on argument effectiveness across ideologies and on argumentation theory-driven prompting for implied misogynistic reasoning."
-    },
-    {
-      "date": "2024",
-      "title": "Summary and discussion analysis",
-      "desc": "The group continued work on long-discussion summarization and literature exploration tools linked to Webis and ArgsBase Lab research."
+      "title": "Improving argument effectiveness across ideologies",
+      "desc": "Our work on improving arguments across ideological viewpoints appeared in Findings of EMNLP 2024.",
+      "url": "https://aclanthology.org/2024.findings-emnlp.265/"
     }
   ],
   "2025": [
@@ -38,12 +35,14 @@
     {
       "date": "2025",
       "title": "Toward Reasonable Parrots",
-      "desc": "A position paper on why large language models should argue with us by design was nominated for the best paper award at ArgMining 2025."
+      "desc": "A position paper on why large language models should argue with us by design was nominated for the best paper award at ArgMining 2025.",
+      "url": "https://aclanthology.org/2025.argmining-1.3/"
     },
     {
       "date": "2025",
-      "title": "Arabic debate and argument mining papers",
-      "desc": "The group contributed new work on culturally-aware Arabic debate platforms, Arabic argument mining, narratives, and critical-question generation."
+      "title": "Cross-lingual Arabic argument mining",
+      "desc": "Our study of cross-lingual transfer and translation-based approaches to Arabic argument mining appeared at ArabicNLP 2025.",
+      "url": "https://aclanthology.org/2025.arabicnlp-main.33/"
     }
   ],
   "2026": [

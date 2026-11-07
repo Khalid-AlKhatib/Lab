@@ -15,7 +15,6 @@ source =
   "globalThis.__CONTENT_TEST__ = { safeUrl, siteAssetUrl, linkAttributes, renderNewsItem, renderNewsListFallback, renderTeaching, memberCard, renderMembers };\n" +
   source.slice(index);
 
-const teachingRow = { innerHTML: "" };
 const currentTeachingRow = { innerHTML: "" };
 const teachingArchive = { innerHTML: "" };
 const newsLatest = { innerHTML: "" };
@@ -33,8 +32,7 @@ const context = {
     readyState: "loading",
     addEventListener() {},
     querySelector(selector) {
-      if (selector === "#teaching2026 .row") return teachingRow;
-      if (selector === "#teachingCurrent .row") return currentTeachingRow;
+      if (selector === "#teachingCurrent") return currentTeachingRow;
       if (selector === "#teachingEarlier") return teachingArchive;
       if (selector === "#home-news-latest") return newsLatest;
       if (selector === "#home-news-archive") return newsArchive;
@@ -93,17 +91,10 @@ assert(newsMore.hidden, "More news control must hide when there are no older upd
 
 
 renderTeaching({
-  2026: [
-    { title: "Valid", desc: "Course", url: "https://example.org", icon: "mdi mdi-book-outline" },
-    { title: "Invalid", desc: "No destination", url: "javascript:alert(1)", icon: "mdi mdi-book-outline" },
+  Current: [
+    { title: "Recurring Course", desc: "Current course", url: "https://example.org" },
+    { title: "No Public Link", desc: "Current course", url: "javascript:alert(1)" },
   ],
-});
-assert(teachingRow.innerHTML.includes('<a class="teaching-card'), "valid Teaching URL must render an anchor");
-assert(teachingRow.innerHTML.includes('<article class="teaching-card'), "invalid Teaching URL must render a non-link card");
-assert(!teachingRow.innerHTML.includes('href="#"'), "Teaching cards must never fall back to href=#");
-
-renderTeaching({
-  Current: [{ title: "Recurring Course", url: "https://example.org" }],
   "2025-2026": [
     { title: "Recurring Course", url: "https://example.org" },
     { title: "Past Course", url: "https://example.org" },
@@ -111,10 +102,13 @@ renderTeaching({
   "2024-2025": [{ title: "Past Course", url: "https://example.org" }],
 });
 assert(currentTeachingRow.innerHTML.includes("Recurring Course"), "current course must remain visible");
+assert(currentTeachingRow.innerHTML.includes('<a class="teaching-course-title"'), "valid course URL must render an anchor");
+assert(currentTeachingRow.innerHTML.includes('<span class="teaching-course-title"'), "invalid course URL must render plain text");
+assert(!currentTeachingRow.innerHTML.includes('href="javascript:'), "unsafe course link must be rejected");
 assert(teachingArchive.innerHTML.includes("Past Course"), "past course must remain accessible");
 assert(!teachingArchive.innerHTML.includes("Recurring Course"), "recurring course must not appear twice");
 assert((teachingArchive.innerHTML.match(/Past Course/g) || []).length === 1, "past course must be deduplicated");
-assert(teachingArchive.innerHTML.includes("2024–25, 2025–26"), "past teaching years must be shown");
+assert(teachingArchive.innerHTML.includes("2024–26"), "consecutive past teaching years must be compressed");
 
 
 const memberHtml = memberCard({
@@ -128,6 +122,7 @@ const memberHtml = memberCard({
 assert(memberHtml.includes("Test Member"), "member card must render the member name");
 assert(memberHtml.includes("Argument Mining"), "member card must render interests");
 assert(memberHtml.includes("mailto:test@example.org"), "member card must render a mailto link");
+assert(!memberHtml.includes("Groningen"), "member listing must not repeat office address");
 assert(!memberHtml.includes("EmailEmail"), "member metadata labels must not be duplicated");
 assert(typeof renderMembers === "function", "member renderer must be defined");
 
