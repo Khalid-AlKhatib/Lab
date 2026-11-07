@@ -3096,3 +3096,117 @@ a.teaching-history-item:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* A compact two-column directory, using the same surfaces as other sections. */
+.members-group .tab-pane.active {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+#externalcollaborators.active {
+  grid-template-columns: minmax(0, 580px);
+  justify-content: center;
+}
+.member-directory-card {
+  width: 100%;
+  height: 100%;
+  padding: 1.15rem 1.2rem;
+}
+.member-directory-card .member-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.member-directory-card .member-header-inline,
+#externalcollaborators .member-directory-card .member-header-inline {
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: 0.85rem;
+}
+.member-directory-card .member-image-inline {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+}
+.member-directory-card .member-image-inline img {
+  border-radius: var(--radius-md);
+}
+.member-directory-card .member-name {
+  font-size: 1.27rem;
+  line-height: 1.2;
+}
+.member-directory-card .member-card-subrole {
+  margin-top: 0.25rem;
+  font-size: var(--text-sm);
+  line-height: 1.35;
+}
+.member-directory-card .member-research {
+  margin: 0.85rem 0 1rem;
+}
+.member-directory-card .member-section-label {
+  margin: 0 0 0.4rem;
+}
+.member-directory-card .member-interest-list {
+  gap: 0.35rem;
+}
+.member-directory-card .interest-chip {
+  min-height: 27px;
+  padding: 0.28rem 0.55rem;
+}
+.member-directory-card .member-card-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: auto;
+}
+.member-directory-card .member-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  color: var(--color-copy);
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+.member-directory-card .member-email i {
+  color: var(--color-accent);
+}
+.member-directory-card .member-profile-wrap {
+  margin-left: auto;
+  justify-self: auto;
+  align-self: auto;
+}
+.member-directory-card .member-profile-link {
+  padding: 0.48rem 0.75rem;
+  font-size: var(--text-sm);
+}
+@media (max-width: 850px) {
+  .members-group .tab-pane.active {
+    grid-template-columns: 1fr;
+  }
+  #externalcollaborators.active {
+    grid-template-columns: minmax(0, 640px);
+  }
+  .member-directory-card {
+    max-width: 640px;
+  }
+}
+@media (max-width: 480px) {
+  .member-directory-card {
+    padding: 1rem;
+  }
+  .member-directory-card .member-header-inline,
+  #externalcollaborators .member-directory-card .member-header-inline {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+  .member-directory-card .member-image-inline {
+    width: 56px;
+    height: 56px;
+  }
+  .member-directory-card .member-card-bottom {
+    align-items: flex-start;
+  }
+}

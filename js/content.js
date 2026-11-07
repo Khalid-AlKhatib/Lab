@@ -322,9 +322,7 @@
       ? '<ul class="member-interest-list mt-0 mb-0">' +
         interests
           .map(function (interest) {
-            return (
-              '<li class="interest-chip">' + escapeHtml(interest) + "</li>"
-            );
+            return '<li class="interest-chip">' + escapeHtml(interest) + "</li>";
           })
           .join("") +
         "</ul>"
@@ -345,54 +343,49 @@
       .filter(Boolean)
       .map(escapeHtml)
       .join(" · ");
-    // Public listing cards stay compact; full office details remain on profiles.
-    var contact = [
-      memberMetaItem(
-        "mdi mdi-email",
-        "Email",
-        item.email,
-        item.email ? "mailto:" + item.email : "",
-      ),
-    ]
-      .filter(Boolean)
-      .join("");
-
-    var contactHtml = contact
-      ? '<div class="member-divider"></div><div class="member-meta-grid">' +
-        contact +
-        "</div>"
+    var emailHref = safeUrl(item.email ? "mailto:" + item.email : "");
+    var email = emailHref
+      ? '<a href="' +
+        escapeAttr(emailHref) +
+        '" class="member-email"><i class="mdi mdi-email" aria-hidden="true"></i>' +
+        escapeHtml(item.email) +
+        "</a>"
       : "";
 
     return (
-      '<article class="member"><div class="member-content">' +
+      '<article class="member member-directory-card"><div class="member-content">' +
       '<div class="member-header member-header-inline"><div class="member-image member-image-inline">' +
       (imageUrl
         ? '<img src="' +
           escapeAttr(imageUrl) +
           '" alt="' +
           escapeAttr(item.name || "") +
-          '" width="96" height="96" loading="lazy" decoding="async">'
+          '" width="64" height="64" loading="lazy" decoding="async">'
         : "") +
       '</div><div class="member-identity"><div class="member-role-badge member-role-' +
       escapeAttr(badgeClass) +
       '">' +
       escapeHtml(badgeLabel) +
-      "</div>" +
-      '<h3 class="member-name mb-0">' +
+      '</div><h3 class="member-name mb-0">' +
       escapeHtml(item.name || "") +
       "</h3>" +
       (subrole
         ? '<p class="member-card-subrole mb-0">' + subrole + "</p>"
         : "") +
-      '<div class="member-section-label">Research interests</div><div class="member-interest mb-0">' +
-      interestsHtml +
-      "</div>" +
-      "</div>" +
-      (profile
-        ? '<div class="member-profile-wrap">' + profile + "</div>"
+      "</div></div>" +
+      (interestsHtml
+        ? '<div class="member-research"><div class="member-section-label">Research interests</div>' +
+          interestsHtml +
+          "</div>"
         : "") +
-      "</div>" +
-      contactHtml +
+      (email || profile
+        ? '<div class="member-card-bottom">' +
+          email +
+          (profile
+            ? '<div class="member-profile-wrap">' + profile + "</div>"
+            : "") +
+          "</div>"
+        : "") +
       "</div></article>"
     );
   }
