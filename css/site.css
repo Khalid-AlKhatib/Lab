@@ -2274,9 +2274,11 @@ a.teaching-course-title:hover {
   font-size: var(--text-base);
   line-height: 1.5;
 }
-.teaching-theses,
-.teaching-history {
+.teaching-theses {
   margin-top: var(--space-6);
+}
+.teaching-archive--courses {
+  margin-top: var(--space-4);
 }
 .teaching-thesis-list {
   display: grid;
@@ -2343,9 +2345,6 @@ a.teaching-course-title:hover {
 }
 .teaching-thesis-items li:last-child {
   border-bottom: 0;
-}
-.teaching-history {
-  padding-top: var(--space-4);
 }
 .teaching-history-list {
   padding: 0.2rem 1.15rem;
