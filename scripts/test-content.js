@@ -16,6 +16,8 @@ source =
   source.slice(index);
 
 const teachingRow = { innerHTML: "" };
+const currentTeachingRow = { innerHTML: "" };
+const teachingArchive = { innerHTML: "" };
 const context = {
   console,
   URL,
@@ -28,7 +30,10 @@ const context = {
     readyState: "loading",
     addEventListener() {},
     querySelector(selector) {
-      return selector === "#teaching2026 .row" ? teachingRow : null;
+      if (selector === "#teaching2026 .row") return teachingRow;
+      if (selector === "#teachingCurrent .row") return currentTeachingRow;
+      if (selector === "#teachingEarlier") return teachingArchive;
+      return null;
     },
     querySelectorAll() { return []; },
   },
@@ -76,6 +81,20 @@ renderTeaching({
 assert(teachingRow.innerHTML.includes('<a class="teaching-card'), "valid Teaching URL must render an anchor");
 assert(teachingRow.innerHTML.includes('<article class="teaching-card'), "invalid Teaching URL must render a non-link card");
 assert(!teachingRow.innerHTML.includes('href="#"'), "Teaching cards must never fall back to href=#");
+
+renderTeaching({
+  Current: [{ title: "Recurring Course", url: "https://example.org" }],
+  "2025-2026": [
+    { title: "Recurring Course", url: "https://example.org" },
+    { title: "Past Course", url: "https://example.org" },
+  ],
+  "2024-2025": [{ title: "Past Course", url: "https://example.org" }],
+});
+assert(currentTeachingRow.innerHTML.includes("Recurring Course"), "current course must remain visible");
+assert(teachingArchive.innerHTML.includes("Past Course"), "past course must remain accessible");
+assert(!teachingArchive.innerHTML.includes("Recurring Course"), "recurring course must not appear twice");
+assert((teachingArchive.innerHTML.match(/Past Course/g) || []).length === 1, "past course must be deduplicated");
+assert(teachingArchive.innerHTML.includes("2024–25, 2025–26"), "past teaching years must be shown");
 
 
 const memberHtml = memberCard({

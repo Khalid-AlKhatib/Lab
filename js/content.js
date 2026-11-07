@@ -35,7 +35,7 @@
 
     offlineDataPromise = new Promise(function (resolve, reject) {
       var script = document.createElement("script");
-      script.src = dataUrl("site-data.js") + "?v=20261106-1";
+      script.src = dataUrl("site-data.js") + "?v=20261107-1";
       script.onload = resolve;
       script.onerror = function () {
         reject(new Error("Failed to load offline data bundle"));
@@ -108,7 +108,7 @@
       var hasFallback = typeof fallback !== "undefined";
       if (window.location.protocol === "file:" && hasFallback) return fallback;
 
-      return fetchJson(dataUrl(file) + "?v=20261106-1").catch(function (error) {
+      return fetchJson(dataUrl(file) + "?v=20261107-1").catch(function (error) {
         if (hasFallback) return fallback;
         throw error;
       });
@@ -599,6 +599,59 @@
         })
         .join("");
     });
+
+    // Keep the full yearly record in JSON, but list recurring courses only once.
+    var archive = document.querySelector("#teachingEarlier");
+    if (!archive) return;
+
+    var activeTitles = new Set(
+      (Array.isArray(data && data.Current) ? data.Current : []).map(function (course) {
+        return String(course.title || "").trim().toLowerCase();
+      }),
+    );
+    var archiveByTitle = new Map();
+    Object.keys(data || {})
+      .filter(function (year) { return year !== "Current"; })
+      .sort()
+      .reverse()
+      .forEach(function (year) {
+        (Array.isArray(data[year]) ? data[year] : []).forEach(function (course) {
+          var title = String(course.title || "").trim();
+          var key = title.toLowerCase();
+          if (!title || activeTitles.has(key)) return;
+          if (!archiveByTitle.has(key)) {
+            archiveByTitle.set(key, { course: course, years: [] });
+          }
+          archiveByTitle.get(key).years.push(year);
+        });
+      });
+
+    archive.innerHTML = Array.from(archiveByTitle.values())
+      .sort(function (a, b) {
+        return b.years[0].localeCompare(a.years[0]) ||
+          String(a.course.title).localeCompare(String(b.course.title));
+      })
+      .map(function (entry) {
+        var attrs = linkAttributes(entry.course.url);
+        var tag = attrs ? "a" : "span";
+        var linkAttrs = attrs
+          ? ' href="' + escapeAttr(attrs.href) + '"' +
+            (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
+            ' target="' + attrs.target + '"'
+          : "";
+        var years = entry.years.slice().reverse().map(function (year) {
+          return year.slice(0, 4) + "–" + year.slice(-2);
+        }).join(", ");
+        return (
+          '<li><' + tag + ' class="teaching-history-item"' + linkAttrs + '>' +
+          '<span class="teaching-history-title">' +
+          escapeHtml(entry.course.title || "") + '</span>' +
+          '<span class="teaching-history-years">' +
+          escapeHtml(years) + '</span>' +
+          '</' + tag + '></li>'
+        );
+      })
+      .join("");
   }
 
   function publicationMeta(item) {
@@ -925,7 +978,7 @@
           renderMembers(members);
         })
         .catch(function (error) { reportLoadError("members", error); });
-    if ($("#teachingTab"))
+    if ($("#teachingCurrent"))
       loadData("teaching.json", "teaching")
         .then(renderTeaching)
         .catch(function (error) { reportLoadError("teaching", error); });
