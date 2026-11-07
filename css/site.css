@@ -2302,6 +2302,41 @@ a.teaching-history-item:hover {
   }
 }
 
+.teaching-theses {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+.teaching-thesis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+.teaching-thesis-grid .kaf-details {
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+}
+.kaf-summary-grid {
+  margin-top: var(--space-5);
+}
+.kaf-profile-highlights li {
+  margin-bottom: 0.7rem;
+}
+.kaf-profile-highlights strong {
+  color: var(--color-text);
+}
+.kaf-card-subhead {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin: var(--space-3) 0 0.45rem;
+}
+@media (max-width: 760px) {
+  .teaching-thesis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Profile detail normalization */
 .kaf-back {
   display: inline-flex;
