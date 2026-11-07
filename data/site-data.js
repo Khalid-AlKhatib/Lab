@@ -15,28 +15,9 @@ window.LTS_DATA = {
     }
   ],
   "members": {
-    "externalCollaborators": [
-      {
-        "badgeClass": "student",
-        "cardLabel": "External collaborator",
-        "image": "../images/optimized/ali-al-zawqari-monogram.svg",
-        "interests": [
-          "Argument Mining",
-          "Interpretable Machine Learning",
-          "Generative AI",
-          "Competitive Debates"
-        ],
-        "name": "Ali Al-Zawqari",
-        "profileUrl": "../members/ali-al-zawqari.html",
-        "role": "Academic and Teaching Staff · Vrije Universiteit Brussel",
-        "status": "QatarDebate Research Fellow"
-      }
-    ],
     "faculty": [
       {
-        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-        "building": "Harmony Building",
-        "email": "khalid.alkhatib@rug.nl",
+        "name": "Khalid Al-Khatib",
         "image": "../images/optimized/khalid-profile-thumb.jpg",
         "interests": [
           "Human–AI Reasoning",
@@ -44,18 +25,16 @@ window.LTS_DATA = {
           "Discourse Analysis",
           "Natural Language Processing"
         ],
-        "name": "Khalid Al-Khatib",
-        "profileUrl": "../members/member-1.html",
-        "room": "1311.0429"
+        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+        "building": "Harmony Building",
+        "room": "1311.0429",
+        "email": "khalid.alkhatib@rug.nl",
+        "profileUrl": "../members/member-1.html"
       }
     ],
-    "intern": [],
-    "master": [],
     "phd": [
       {
-        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-        "building": "1312",
-        "email": "s.nabhani@rug.nl",
+        "name": "Sara Nabhani",
         "image": "../images/optimized/nabhani-thumb.jpg",
         "interests": [
           "Computational Argumentation",
@@ -63,35 +42,57 @@ window.LTS_DATA = {
           "Arabic and Multilingual NLP",
           "Propaganda and Persuasion"
         ],
-        "name": "Sara Nabhani",
-        "profileUrl": "../members/nabhani.html",
-        "room": "0208"
+        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+        "building": "1312",
+        "room": "0208",
+        "email": "s.nabhani@rug.nl",
+        "profileUrl": "../members/nabhani.html"
       },
       {
+        "name": "Qing Wang",
         "image": "../images/optimized/qing-wang-monogram.svg",
         "interests": [
           "Science Fiction and AI",
           "Reader-Response Analysis",
           "AI Evaluation"
         ],
-        "name": "Qing Wang",
-        "profileUrl": "../members/qing-wang.html"
+        "profileUrl": "../members/qing-wang.html",
+        "email": "qing.wang@rug.nl"
       },
       {
-        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-        "badgeClass": "student",
-        "building": "1313",
-        "cardLabel": "Research Assistant",
-        "email": "fturkstra@rug.nl",
+        "name": "Frieso Turkstra",
         "image": "../images/optimized/frieso-turkstra-monogram.svg",
         "interests": [
           "Natural Language Processing",
           "Human–AI Deliberation",
           "Critical Question Generation"
         ],
-        "name": "Frieso Turkstra",
-        "profileUrl": "../members/fturkstra.html",
-        "room": "0305"
+        "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+        "building": "1313",
+        "room": "0305",
+        "email": "fturkstra@rug.nl",
+        "cardLabel": "Research Assistant",
+        "badgeClass": "student",
+        "profileUrl": "../members/fturkstra.html"
+      }
+    ],
+    "master": [],
+    "intern": [],
+    "externalCollaborators": [
+      {
+        "name": "Ali Al-Zawqari",
+        "image": "../images/optimized/ali-al-zawqari-monogram.svg",
+        "interests": [
+          "Argument Mining",
+          "Interpretable Machine Learning",
+          "Generative AI",
+          "Competitive Debates"
+        ],
+        "role": "Academic and Teaching Staff · Vrije Universiteit Brussel",
+        "status": "QatarDebate Research Fellow",
+        "cardLabel": "External collaborator",
+        "badgeClass": "student",
+        "profileUrl": "../members/ali-al-zawqari.html"
       }
     ]
   },
