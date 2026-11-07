@@ -79,16 +79,6 @@
     return { activate: activate, entries: entries };
   }
 
-  function initSectionNavigator() {
-    var menu = document.querySelector(".home-section-nav");
-    if (!menu) return;
-    createTabs({
-      tablist: menu,
-      tabSelector: "[data-home-panel]",
-      getPanelId: function (tab) { return tab.dataset.homePanel; }
-    });
-  }
-
   function initProfileTabs() {
     var tablist = document.getElementById("kaf-tabs");
     if (!tablist) return;
@@ -109,7 +99,6 @@
   function init() {
     updateNavbarState();
     initNavLinks();
-    initSectionNavigator();
     initProfileTabs();
     initTooltips();
   }

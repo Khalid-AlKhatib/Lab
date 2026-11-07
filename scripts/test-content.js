@@ -12,12 +12,15 @@ const index = source.lastIndexOf(marker);
 if (index < 0) throw new Error("Could not instrument content.js");
 source =
   source.slice(0, index) +
-  "globalThis.__CONTENT_TEST__ = { safeUrl, siteAssetUrl, linkAttributes, renderNewsItem, renderTeaching, memberCard, renderMembers };\n" +
+  "globalThis.__CONTENT_TEST__ = { safeUrl, siteAssetUrl, linkAttributes, renderNewsItem, renderNewsListFallback, renderTeaching, memberCard, renderMembers };\n" +
   source.slice(index);
 
 const teachingRow = { innerHTML: "" };
 const currentTeachingRow = { innerHTML: "" };
 const teachingArchive = { innerHTML: "" };
+const newsLatest = { innerHTML: "" };
+const newsArchive = { innerHTML: "" };
+const newsMore = { hidden: true };
 const context = {
   console,
   URL,
@@ -33,6 +36,9 @@ const context = {
       if (selector === "#teaching2026 .row") return teachingRow;
       if (selector === "#teachingCurrent .row") return currentTeachingRow;
       if (selector === "#teachingEarlier") return teachingArchive;
+      if (selector === "#home-news-latest") return newsLatest;
+      if (selector === "#home-news-archive") return newsArchive;
+      if (selector === "#home-news-more") return newsMore;
       return null;
     },
     querySelectorAll() { return []; },
@@ -42,7 +48,7 @@ context.window = context;
 vm.createContext(context);
 vm.runInContext(source, context, { filename: "content.js" });
 
-const { safeUrl, siteAssetUrl, linkAttributes, renderNewsItem, renderTeaching, memberCard, renderMembers } = context.__CONTENT_TEST__;
+const { safeUrl, siteAssetUrl, linkAttributes, renderNewsItem, renderNewsListFallback, renderTeaching, memberCard, renderMembers } = context.__CONTENT_TEST__;
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
@@ -70,6 +76,20 @@ assert(unsafeNews.includes("&lt;script&gt;"), "escaped News title should remain 
 const safeNews = renderNewsItem({ title: "News", desc: "Description", url: "https://example.org" });
 assert(safeNews.includes('href="https://example.org"'), "safe News URL must be rendered");
 assert(safeNews.includes('rel="noopener noreferrer"'), "external News URL must be protected");
+renderNewsListFallback({
+  "2026": [
+    { title: "First" }, { title: "Second" }, { title: "Third" },
+    { title: "Fourth" }, { title: "Fifth" },
+  ],
+  "2025": [{ title: "Older" }],
+});
+assert((newsLatest.innerHTML.match(/class="news-item/g) || []).length === 4, "homepage must show four latest news");
+assert(newsArchive.innerHTML.includes("Fifth") && newsArchive.innerHTML.includes("Older"), "older news must remain accessible");
+assert(!newsMore.hidden, "More news control must be visible when older updates exist");
+
+renderNewsListFallback({ "2026": [{ title: "Only update" }] });
+assert(newsMore.hidden, "More news control must hide when there are no older updates");
+
 
 
 renderTeaching({

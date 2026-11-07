@@ -35,7 +35,7 @@
 
     offlineDataPromise = new Promise(function (resolve, reject) {
       var script = document.createElement("script");
-      script.src = dataUrl("site-data.js") + "?v=20261107-1";
+      script.src = dataUrl("site-data.js") + "?v=20261107-2";
       script.onload = resolve;
       script.onerror = function () {
         reject(new Error("Failed to load offline data bundle"));
@@ -108,7 +108,7 @@
       var hasFallback = typeof fallback !== "undefined";
       if (window.location.protocol === "file:" && hasFallback) return fallback;
 
-      return fetchJson(dataUrl(file) + "?v=20261107-1").catch(function (error) {
+      return fetchJson(dataUrl(file) + "?v=20261107-2").catch(function (error) {
         if (hasFallback) return fallback;
         throw error;
       });
@@ -179,9 +179,6 @@
   }
 
   function renderNewsListFallback(newsData) {
-    var list = $(".news-list");
-    if (!list) return;
-
     var items = Object.keys(newsData || {})
       .sort(function (a, b) {
         return parseInt(b, 10) - parseInt(a, 10);
@@ -190,7 +187,18 @@
         return all.concat(Array.isArray(newsData[year]) ? newsData[year] : []);
       }, []);
 
-    if (items.length) list.innerHTML = items.map(renderNewsItem).join("");
+    var latest = $("#home-news-latest");
+    var archive = $("#home-news-archive");
+    if (latest && archive) {
+      latest.innerHTML = items.slice(0, 4).map(renderNewsItem).join("");
+      archive.innerHTML = items.slice(4).map(renderNewsItem).join("");
+      var more = $("#home-news-more");
+      if (more) more.hidden = items.length <= 4;
+      return;
+    }
+
+    var list = $(".news-list");
+    if (list && items.length) list.innerHTML = items.map(renderNewsItem).join("");
   }
 
   function renderBlog(posts) {
@@ -264,10 +272,10 @@
             (attrs.rel ? ' rel="' + attrs.rel + '"' : "")
           : "";
         return (
-          '<li class="mb-3"><' + tag + linkAttrs + ' class="open-position d-flex p-4 ' +
+          '<li><' + tag + linkAttrs + ' class="open-position ' +
           escapeAttr(position.className || "") + '">' +
           '<div class="open-position-icon"><i class="mdi mdi-briefcase fs-20"></i></div>' +
-          '<div class="open-position-content ps-3">' +
+          '<div class="open-position-content">' +
           '<h3 class="open-position-title mb-2">' +
           escapeHtml(position.title || "") +
           "</h3>" +

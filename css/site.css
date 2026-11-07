@@ -932,36 +932,6 @@ p {
   font-size: var(--text-base);
   line-height: 1.38;
 }
-.home-section-nav {
-  position: static;
-  width: min(calc(100% - (var(--page-gutter) * 2)), var(--container));
-  margin: var(--space-4) auto 0;
-  padding: 0;
-}
-.home-section-nav .section-nav {
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scrollbar-width: none;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  backdrop-filter: none;
-}
-.home-section-nav .section-nav::-webkit-scrollbar {
-  display: none;
-}
-
-.site-home .home-panel[hidden] {
-  display: none;
-}
-.site-home .home-panel.active {
-  display: block;
-}
 .site-home .tab-content > .tab-pane:not(.active) {
   display: none;
 }
@@ -1148,11 +1118,117 @@ p {
 .site-home .home-panel {
   height: auto;
   min-height: 0;
-  padding: var(--space-6) 0 var(--space-section-fluid);
+  padding: clamp(1.65rem, 2.5vw, 2.35rem) 0;
 }
-.site-home #home-panel-news .tab-content,
-.site-home #home-panel-news .tab-pane {
-  min-height: 0;
+.site-home .home-panel .section-heading {
+  margin-bottom: var(--space-4);
+}
+.site-home #home-panel-news,
+.site-home #home-panel-collaboration,
+.site-home #home-panel-open-positions {
+  border-top: 1px solid var(--color-border);
+}
+.site-home .home-news-shell {
+  width: min(100%, 980px);
+}
+.site-home .home-news-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.site-home .home-news-list li {
+  min-width: 0;
+}
+.site-home .home-news-list li .news-item {
+  min-height: 135px;
+  height: 100%;
+  padding: 0.95rem 1.1rem;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-soft);
+}
+.site-home .home-news-list li .news-item:hover {
+  background: var(--color-accent-soft);
+}
+.site-home .home-news-list .news-item-title {
+  font-size: var(--text-base);
+  line-height: 1.3;
+}
+.site-home .home-news-list .news-item-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--text-sm);
+  line-height: 1.45;
+}
+.home-news-more {
+  margin-top: var(--space-3);
+}
+.home-news-more summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  padding: 0.35rem 0;
+}
+.home-news-more summary:hover {
+  color: var(--color-text);
+}
+.home-news-more .home-news-list--archive {
+  margin-top: var(--space-3);
+}
+.site-home .collaboration-grid {
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.site-home .collab-card {
+  padding: var(--space-4);
+}
+.site-home .collab-card h3 {
+  font-size: var(--text-md);
+  margin-bottom: 0.5rem;
+}
+.site-home .collab-card p,
+.site-home .collab-card li {
+  font-size: var(--text-sm);
+  line-height: 1.45;
+}
+.site-home .collab-card p {
+  margin-bottom: 0.4rem;
+}
+.site-home .collab-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.7rem;
+  padding: 0;
+  margin: 0.65rem 0 0;
+  list-style: none;
+}
+.site-home .open-position {
+  max-width: 100%;
+  padding: 0.75rem 0;
+  align-items: center;
+}
+.site-home .open-position-title {
+  font-size: var(--text-md);
+  margin-bottom: 0.2rem;
+}
+.site-home .open-position-description {
+  font-size: var(--text-sm);
+}
+@media (max-width: 900px) {
+  .site-home .collaboration-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .site-home .home-news-list {
+    grid-template-columns: 1fr;
+  }
+  .site-home .home-news-list li .news-item {
+    min-height: 0;
+  }
 }
 
 /* Research */
@@ -2466,9 +2542,6 @@ a.teaching-history-item:hover {
   .hero-keywords {
     justify-content: flex-start;
   }
-  .home-section-nav {
-    margin-top: var(--space-3);
-  }
   .link-bar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2593,10 +2666,6 @@ a.teaching-history-item:hover {
     padding-bottom: 0.3rem;
   }
 
-  .home-section-nav .section-nav {
-    width: 100%;
-    justify-content: flex-start;
-  }
   .content-tabs,
   .year-filter {
     justify-content: flex-start;
