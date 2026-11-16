@@ -100,78 +100,84 @@ window.LTS_DATA = {
     "2024": [
       {
         "date": "2024",
-        "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024.",
         "title": "TL;DR Progress at EACL 2024",
+        "desc": "A multi-faceted interface for literature exploration in text summarization was presented at EACL 2024.",
         "url": "https://aclanthology.org/2024.eacl-demo.21/"
       },
       {
         "date": "2024",
-        "desc": "Our work on improving arguments across ideological viewpoints appeared in Findings of EMNLP 2024.",
         "title": "Improving argument effectiveness across ideologies",
+        "desc": "Our work on improving arguments across ideological viewpoints appeared in Findings of EMNLP 2024.",
         "url": "https://aclanthology.org/2024.findings-emnlp.265/"
       }
     ],
     "2025": [
       {
         "date": "2025",
-        "desc": "Khalid Al-Khatib co-organised the Lorentz Center workshop Hybrid Argumentation and Responsible AI.",
         "title": "Co-organised Lorentz Center workshop",
+        "desc": "Khalid Al-Khatib co-organised the Lorentz Center workshop Hybrid Argumentation and Responsible AI.",
         "url": "https://www.lorentzcenter.nl/hybrid-argumentation-and-responsible-ai.html"
       },
       {
         "date": "2025",
-        "desc": "Khalid Al-Khatib received the QatarDebate Fellowship in support of current research activity.",
         "title": "QatarDebate Fellowship",
+        "desc": "Khalid Al-Khatib received the QatarDebate Fellowship in support of current research activity.",
         "url": "https://qatardebate.org/programs/academic-programs/qdfellowship/"
       },
       {
         "date": "2025",
-        "desc": "Recognition from the Jantina Tammes School of Digital Society, Technology and AI.",
         "title": "JTS Early Career Researcher Prize",
+        "desc": "Recognition from the Jantina Tammes School of Digital Society, Technology and AI.",
         "url": "https://www.rug.nl/jantina-tammes-school/news/2025/jts-birthday-early-career-researchers-winners?lang=en"
       },
       {
         "date": "2025",
-        "desc": "A position paper on why large language models should argue with us by design was nominated for the best paper award at ArgMining 2025.",
         "title": "Toward Reasonable Parrots",
+        "desc": "A position paper on why large language models should argue with us by design was nominated for the best paper award at ArgMining 2025.",
         "url": "https://aclanthology.org/2025.argmining-1.3/"
       },
       {
         "date": "2025",
-        "desc": "Our study of cross-lingual transfer and translation-based approaches to Arabic argument mining appeared at ArabicNLP 2025.",
         "title": "Cross-lingual Arabic argument mining",
+        "desc": "Our study of cross-lingual transfer and translation-based approaches to Arabic argument mining appeared at ArabicNLP 2025.",
         "url": "https://aclanthology.org/2025.arabicnlp-main.33/"
       }
     ],
     "2026": [
       {
+        "date": "November 2026",
+        "title": "PART shared task for ArgMining 2027",
+        "desc": "We are co-organising PART (Parameterized Argumentative Reasoning Task), which challenges systems to reason about witness testimony and decide who can be believed. Training data is now available.",
+        "url": "https://argpart.github.io/"
+      },
+      {
         "date": "October 2026",
-        "desc": "We co-organised the Daleel shared task with QatarDebate. Twelve teams participated in Arabic argument mining on editorials and debates, and the overview paper is now published.",
         "title": "Daleel 2026 at ArabicNLP / EMNLP",
+        "desc": "We co-organised the Daleel shared task with QatarDebate. Twelve teams participated in Arabic argument mining on editorials and debates, and the overview paper is now published.",
         "url": "https://aclanthology.org/2026.arabicnlp-sharedtasks.161/"
       },
       {
         "date": "October 2026",
-        "desc": "Qing Wang joined as a PhD researcher. Her project studies how readers interpret AI in science fiction and how these perspectives can inform AI evaluation.",
         "title": "Qing Wang joins the group",
+        "desc": "Qing Wang joined as a PhD researcher. Her project studies how readers interpret AI in science fiction and how these perspectives can inform AI evaluation.",
         "url": "https://lab.argsbase.net/members/qing-wang.html"
       },
       {
         "date": "March 2026",
-        "desc": "Our ArgsBase system demonstration paper appeared at EACL 2026. It describes a multi-agent interface for structured human–AI deliberation.",
         "title": "ArgsBase demo at EACL 2026",
+        "desc": "Our ArgsBase system demonstration paper appeared at EACL 2026. It describes a multi-agent interface for structured human–AI deliberation.",
         "url": "https://aclanthology.org/2026.eacl-demo.39/"
       },
       {
         "date": "February 2026",
-        "desc": "Sara Nabhani and collaborators released ARGUS, a study of how narrative features relate to persuasion in online arguments.",
         "title": "ARGUS preprint on narratives and persuasion",
+        "desc": "Sara Nabhani and collaborators released ARGUS, a study of how narrative features relate to persuasion in online arguments.",
         "url": "https://arxiv.org/abs/2602.24109"
       },
       {
         "date": "2026",
-        "desc": "Khalid Al-Khatib attended NII Shonan Meeting No.239 and gave a talk on hybrid argumentation and recommendation systems.",
         "title": "Shonan Seminar on argumentation and recommender systems",
+        "desc": "Khalid Al-Khatib attended NII Shonan Meeting No.239 and gave a talk on hybrid argumentation and recommendation systems.",
         "url": "https://shonan.nii.ac.jp/seminars/239/"
       }
     ]

@@ -47,6 +47,12 @@
   ],
   "2026": [
     {
+      "date": "November 2026",
+      "title": "PART shared task for ArgMining 2027",
+      "desc": "We are co-organising PART (Parameterized Argumentative Reasoning Task), which challenges systems to reason about witness testimony and decide who can be believed. Training data is now available.",
+      "url": "https://argpart.github.io/"
+    },
+    {
       "date": "October 2026",
       "title": "Daleel 2026 at ArabicNLP / EMNLP",
       "desc": "We co-organised the Daleel shared task with QatarDebate. Twelve teams participated in Arabic argument mining on editorials and debates, and the overview paper is now published.",
