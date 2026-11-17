@@ -117,20 +117,15 @@
 
   function renderNewsItem(item) {
     var attrs = linkAttributes(item.url);
-    var tag = attrs ? "a" : "div";
-    var href = attrs
-      ? ' href="' + escapeAttr(attrs.href) + '" target="' + attrs.target + '"' +
-        (attrs.rel ? ' rel="' + attrs.rel + '"' : "")
+    var detailsLink = attrs
+      ? '<a class="news-source-link" href="' + escapeAttr(attrs.href) + '"' +
+        (attrs.rel ? ' rel="' + attrs.rel + '"' : "") +
+        ' aria-label="More details about ' + escapeAttr(item.title || "this update") +
+        '">More details</a>'
       : "";
-    var extraClass = attrs ? "" : " news-item-static";
 
     return (
-      "<li><" +
-      tag +
-      href +
-      ' class="news-item' +
-      extraClass +
-      '">' +
+      '<li><article class="news-item">' +
       '<p class="news-item-date text-muted fs-12 m-0">' +
       escapeHtml(item.date || "") +
       "</p>" +
@@ -140,9 +135,8 @@
       '<p class="news-item-description">' +
       escapeHtml(item.desc || "") +
       "</p>" +
-      "</" +
-      tag +
-      "></li>"
+      detailsLink +
+      "</article></li>"
     );
   }
 

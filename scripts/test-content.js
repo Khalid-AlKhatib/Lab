@@ -70,10 +70,16 @@ assert(!unsafeNews.includes("href="), "unsafe News URL must not render as a link
 assert(!unsafeNews.includes("<script>"), "News title must be escaped");
 assert(!unsafeNews.includes("<img src=x"), "News description must be escaped");
 assert(unsafeNews.includes("&lt;script&gt;"), "escaped News title should remain readable");
+assert(unsafeNews.includes('<article class="news-item">'), "news must be readable without clicking");
+assert(!unsafeNews.includes('news-source-link'), "unsafe News URL must not show a details link");
 
 const safeNews = renderNewsItem({ title: "News", desc: "Description", url: "https://example.org" });
 assert(safeNews.includes('href="https://example.org"'), "safe News URL must be rendered");
 assert(safeNews.includes('rel="noopener noreferrer"'), "external News URL must be protected");
+assert(safeNews.includes('aria-label="More details about News"'), "news link must have an informative label");
+assert(!safeNews.includes('target="_blank"'), "news links must open in the same tab");
+assert(safeNews.includes('<article class="news-item">'), "the full news article must not be a link");
+assert(safeNews.includes('<p class="news-item-description">Description</p>'), "the full news description must be present");
 renderNewsListFallback({
   "2026": [
     { title: "First" }, { title: "Second" }, { title: "Third" },
@@ -81,7 +87,7 @@ renderNewsListFallback({
   ],
   "2025": [{ title: "Older" }],
 });
-assert((newsLatest.innerHTML.match(/class="news-item/g) || []).length === 4, "homepage must show four latest news");
+assert((newsLatest.innerHTML.match(/<article class="news-item">/g) || []).length === 4, "homepage must show four latest news");
 assert(newsArchive.innerHTML.includes("Fifth") && newsArchive.innerHTML.includes("Older"), "older news must remain accessible");
 assert(!newsMore.hidden, "More news control must be visible when older updates exist");
 
